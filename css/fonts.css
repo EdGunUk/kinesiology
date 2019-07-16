@@ -1,0 +1,27 @@
+@font-face {
+  font-family: San-Francisco;
+  src: url(../fonts/SFUIDisplay-Thin/SFUIDisplay-Thin.woff);
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: San-Francisco;
+  src: url(../fonts/SFUIDisplay-Light/SFUIDisplay-Light.woff);
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: San-Francisco;
+  src: url(../fonts/SFUIDisplay-Regular/SFUIDisplay-Regular.woff);
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: San-Francisco;
+  src: url(../fonts/SFUIDisplay-Medium/SFUIDisplay-Medium.woff);
+  font-weight: 300;
+  font-style: normal;
+}

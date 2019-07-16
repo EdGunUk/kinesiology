@@ -1,0 +1,91 @@
+.carusel {
+  background-color: #fafafa;
+  background-color: var(--main-background-color);
+  display: flex;
+  height: 528px;
+  justify-content: center;
+  margin: 71px 0 10px;
+  overflow: hidden;
+}
+
+.carusel-gallery {
+  height: 2112px;
+  margin: 0;
+  max-width: 1140px;
+  padding: 0;
+  transition-duration: .5s;
+  transition-duration: var(--main-transition-duration);
+  transition-property: transform;
+}
+
+.carusel-item {
+  list-style-type: none;
+}
+
+.carusel-img {
+  display: block;
+  height: auto;
+  width: 100%;
+}
+
+.carusel-navigation {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  right: 31px;
+  width: 0;
+}
+
+.carusel-arrow-top, .carusel-arrow-bottom {
+  align-items: center;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  height: 62px;
+  justify-content: center;
+  width: 62px;
+}
+
+.carusel-arrow-item, .carusel-arrow-item {
+  background-color: #fafafa;
+  background-color: var(--main-background-color);
+  box-shadow: 0 0 15px #fafafa;
+  box-shadow: 0 0 15px var(--main-background-color);
+  display: block;
+  height: 1px;
+  transition-duration: .5s;
+  transition-duration: var(--main-transition-duration);
+  transition-property: background-color, box-shadow;
+  width: 25px;
+}
+
+.carusel-arrow-item:first-child, .carusel-arrow-item:first-child {
+  transform: translateX(8px) translateY(-1px) rotate(45deg);
+}
+
+.carusel-arrow-item:last-child, .carusel-arrow-item:last-child {
+  transform: translateX(-9px) translateY(-2px) rotate(-45deg);
+}
+
+.carusel-arrow-bottom {
+  transform: rotate(180deg);
+}
+
+.carusel-status-bar-item {
+  border-color: #fafafa;
+  border-color: var(--main-background-color);
+  border-radius: 50%;
+  border-style: solid;
+  border-width: 1px;
+  box-shadow: 0 0 15px #fafafa;
+  box-shadow: 0 0 15px var(--main-background-color);
+  display: block;
+  height: 9px;
+  margin: 5px;
+  transition-duration: .5s;
+  transition-duration: var(--main-transition-duration);
+  transition-property: background-color, border-color, box-shadow;
+  width: 9px;
+}
