@@ -25,14 +25,20 @@ function createStatusBarItem() {
   });
 }
 
+function setColorAsVariable(color) {
+  if(!!document.documentMode) {
+    return "#" + color.slice(-3);
+  }
+  return " var(--" + color + ")";
+}
+
 let statusBarColor;
 let counter = 0;
 
 function chengeStatusBarColor() {
   statusBarColor = imagesArr[counter].dataset.statusBarColor;
   statusBarItemArr.forEach(function(item) {
-    item.style.borderColor = statusBarColor;
-    item.style.boxShadow = "0 0 30px" + statusBarColor;
+    item.style.borderColor = setColorAsVariable(statusBarColor);
   });
 }
 
@@ -40,15 +46,33 @@ function highlightStatusBarItem() {
   statusBarItemArr.forEach(function(item) {
     item.style.backgroundColor = "";
   });
-  statusBarItemArr[counter].style.backgroundColor = statusBarColor;
+  statusBarItemArr[counter].style.backgroundColor = setColorAsVariable(statusBarColor);
 }
 
 function chengeArrowsColor() {
   let arrowColor = imagesArr[counter].dataset.arrowColor;
   [].slice.call(body.querySelectorAll(".carusel-arrow-item")).forEach(function(item) {
-    item.style.backgroundColor = arrowColor;
-    item.style.boxShadow = "0 0 10px" + arrowColor;
+    item.style.backgroundColor = setColorAsVariable(arrowColor);
   });
+}
+
+let caruselTexts = body.querySelectorAll(".carusel-text");
+
+function showCaruselText() {
+  caruselTexts[counter].style.opacity = "1";
+}
+
+function hideCaruselText() {
+  caruselTexts[counter].style.opacity = "";
+}
+
+let timerDisappearCaruselText;
+let runCaruselInterval = 10000;
+let dalayAppearCaruselText = 1000;
+
+function delayCaruselText() {
+  setTimeout(showCaruselText, dalayAppearCaruselText);
+  timerDisappearCaruselText = setTimeout(hideCaruselText, runCaruselInterval - dalayAppearCaruselText);
 }
 
 function chengeImage() {
@@ -57,6 +81,8 @@ function chengeImage() {
 }
 
 function runCarusel(direction) {
+  hideCaruselText();
+
   if(direction === "normal") {
     counter++;
     if(counter >= imagesArr.length) counter = 0;
@@ -65,22 +91,30 @@ function runCarusel(direction) {
     counter--;
     if(counter < 0) counter = imagesArr.length - 1;
   }
+  
   chengeStatusBarColor();
   highlightStatusBarItem();
   chengeArrowsColor();
+  delayCaruselText();
   chengeImage();
 }
 
-let timerId;
+let timerRunCarusel;
 
 function runCaruselWithInterval() {
-  timerId = setInterval(function() {
+  timerRunCarusel = setTimeout(function run() {
     runCarusel("normal");
-  }, 2000);
+    timerRunCarusel = setTimeout(run, runCaruselInterval);
+  }, runCaruselInterval);
+
+  // timerRunCarusel = setInterval(function() {
+  //   runCarusel("normal");
+  // }, runCaruselInterval);
 }
 
 function stopCaruselWithInterval() {
-  clearInterval(timerId);
+  clearTimeout(timerRunCarusel);
+  clearTimeout(timerDisappearCaruselText);
 }
 
 // -------------------------------------------------------------------- //
@@ -92,6 +126,7 @@ function initialStartCarusel() {
   chengeStatusBarColor();
   highlightStatusBarItem();
   chengeArrowsColor();
+  delayCaruselText();
   runCaruselWithInterval();
  }
 

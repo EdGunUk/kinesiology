@@ -1,5 +1,5 @@
 .carusel {
-  background-color: #fafafa;
+  background-color: rgb(250, 250, 250);
   background-color: var(--main-background-color);
   display: flex;
   height: 528px;
@@ -13,13 +13,68 @@
   margin: 0;
   max-width: 1140px;
   padding: 0;
-  transition-duration: .5s;
-  transition-duration: var(--main-transition-duration);
+  transition-duration: 2s;
+  transition-duration: var(--carusel-transition-duration);
   transition-property: transform;
 }
 
 .carusel-item {
   list-style-type: none;
+  position: relative;
+}
+
+.carusel-text {
+  position: absolute;
+  z-index: 9;
+  font-family: San-Francisco;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 100;
+  padding: 10px;
+  border-radius: 5px;
+  box-sizing: content-box;
+  transition-duration: 2s;
+  transition-duration: var(--carusel-transition-duration);
+  transition-property: opacity;
+  opacity: 0;
+}
+
+.carusel-text_first {
+  width: 280px;
+  top: 100px;
+  right: 120px;
+  background-color: rgba(250, 250, 250, .9);
+  color: #444;
+  box-shadow: 0 0 15px #444;
+}
+
+.carusel-text_second {
+  width: 250px;
+  top: 155px;
+  right: 70px;
+  background-color: rgba(68, 68, 68, .5);
+  color: #fafafa;
+  box-shadow: 0 0 15px #fafafa;
+}
+
+
+.carusel-text_third {
+  width: 335px;
+  top: 100px;
+  right: 120px;
+  background-color: rgba(68, 68, 68, .5);
+  color: #fafafa;
+  box-shadow: 0 0 15px #fafafa;
+}
+
+
+.carusel-text_fourth {
+  width: 290px;
+  top: 120px;
+  left: 100px;
+  background-color: rgba(250, 250, 250, .9);
+  color: #444;
+  box-shadow: 0 0 15px #444;
 }
 
 .carusel-img {
@@ -49,15 +104,11 @@
 }
 
 .carusel-arrow-item, .carusel-arrow-item {
-  background-color: #fafafa;
-  background-color: var(--main-background-color);
-  box-shadow: 0 0 15px #fafafa;
-  box-shadow: 0 0 15px var(--main-background-color);
   display: block;
   height: 1px;
   transition-duration: .5s;
   transition-duration: var(--main-transition-duration);
-  transition-property: background-color, box-shadow;
+  transition-property: background-color;
   width: 25px;
 }
 
@@ -74,18 +125,14 @@
 }
 
 .carusel-status-bar-item {
-  border-color: #fafafa;
-  border-color: var(--main-background-color);
   border-radius: 50%;
   border-style: solid;
   border-width: 1px;
-  box-shadow: 0 0 15px #fafafa;
-  box-shadow: 0 0 15px var(--main-background-color);
   display: block;
   height: 9px;
   margin: 5px;
   transition-duration: .5s;
   transition-duration: var(--main-transition-duration);
-  transition-property: background-color, border-color, box-shadow;
+  transition-property: background-color, border-color;
   width: 9px;
 }
