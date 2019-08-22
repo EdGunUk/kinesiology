@@ -1,9 +1,10 @@
 "use strict";
+
 let body = document.body;
 let imagesArr = [].slice.call(body.querySelectorAll(".carusel-img"));
 let imageHeight;
 
-function resizeHeightCarusel(){
+function resizeHeightCarusel() {
   imageHeight = imagesArr[0].offsetHeight;
   body.querySelector(".carusel").style.height = imageHeight + "px";
 }
@@ -13,6 +14,8 @@ let gallery = body.querySelector(".carusel-gallery");
 function resizeHeightGallery() {
   gallery.style.height = imageHeight * imagesArr.length + "px";
 }
+
+// ------------------------------------------------------------------ //
 
 let statusBarItemArr = [];
 
@@ -102,9 +105,9 @@ function runCarusel(direction) {
 let timerRunCarusel;
 
 function runCaruselWithInterval() {
-  timerRunCarusel = setTimeout(function run() {
+  timerRunCarusel = setTimeout(function() {
     runCarusel("normal");
-    timerRunCarusel = setTimeout(run, runCaruselInterval);
+    runCaruselWithInterval();
   }, runCaruselInterval);
 
   // timerRunCarusel = setInterval(function() {
@@ -117,7 +120,7 @@ function stopCaruselWithInterval() {
   clearTimeout(timerDisappearCaruselText);
 }
 
-// -------------------------------------------------------------------- //
+// ------------------------------------------------------------------ //
 
 function initialStartCarusel() {
   resizeHeightCarusel();
@@ -128,7 +131,7 @@ function initialStartCarusel() {
   chengeArrowsColor();
   delayCaruselText();
   runCaruselWithInterval();
- }
+}
 
 let arrowTop = body.querySelector(".carusel-arrow-top");
 let arrowBottom = body.querySelector(".carusel-arrow-bottom");
@@ -136,6 +139,7 @@ let arrowBottom = body.querySelector(".carusel-arrow-bottom");
 function defineEvent() {
   window.addEventListener("resize", resizeHeightCarusel);
   window.addEventListener("resize", resizeHeightGallery);
+  window.addEventListener("resize", chengeImage);
 
   gallery.addEventListener("mouseout", runCaruselWithInterval);
   gallery.addEventListener("mouseover", stopCaruselWithInterval);
@@ -143,12 +147,14 @@ function defineEvent() {
   arrowTop.addEventListener("click", function() {
     runCarusel("reverse");
   });
+  arrowTop.addEventListener("click", stopCaruselWithInterval);
   arrowTop.addEventListener("mouseout", runCaruselWithInterval);
   arrowTop.addEventListener("mouseover", stopCaruselWithInterval);
 
   arrowBottom.addEventListener("click", function() {
     runCarusel("normal");
   });
+  arrowBottom.addEventListener("click", stopCaruselWithInterval);
   arrowBottom.addEventListener("mouseout", runCaruselWithInterval);
   arrowBottom.addEventListener("mouseover", stopCaruselWithInterval);
 }
