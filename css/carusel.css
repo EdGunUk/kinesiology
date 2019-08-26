@@ -1,9 +1,13 @@
 .carusel {
   background-color: rgb(250, 250, 250);
   background-color: var(--main-background-color);
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   height: 528px;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin: 71px 0 10px;
   overflow: hidden;
 }
@@ -13,9 +17,17 @@
   margin: 0;
   max-width: 1140px;
   padding: 0;
-  transition-duration: 2s;
-  transition-duration: var(--carusel-transition-duration);
+  -webkit-transition-duration: 2s;
+       -o-transition-duration: 2s;
+          transition-duration: 2s;
+  -webkit-transition-duration: var(--carusel-transition-duration);
+       -o-transition-duration: var(--carusel-transition-duration);
+          transition-duration: var(--carusel-transition-duration);
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  -o-transition-property: transform;
   transition-property: transform;
+  transition-property: transform, -webkit-transform;
 }
 
 .carusel-item {
@@ -24,55 +36,56 @@
 }
 
 .carusel-text {
-  position: absolute;
-  z-index: 9;
+  bottom: 0;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
   font-family: San-Francisco;
-  font-size: 18px;
+  font-size: 15px;
   font-style: normal;
   font-weight: 100;
-  padding: 10px;
-  border-radius: 5px;
-  box-sizing: content-box;
-  transition-duration: 2s;
-  transition-duration: var(--carusel-transition-duration);
-  transition-property: opacity;
   opacity: 0;
+  padding: 10px 0 ;
+  position: absolute;
+  text-align: center;
+  -webkit-transition-duration: 2s;
+       -o-transition-duration: 2s;
+          transition-duration: 2s;
+  -webkit-transition-duration: var(--carusel-transition-duration);
+       -o-transition-duration: var(--carusel-transition-duration);
+          transition-duration: var(--carusel-transition-duration);
+  -webkit-transition-property: opacity, width, top, right, font-size;
+  -o-transition-property: opacity, width, top, right, font-size;
+  transition-property: opacity, width, top, right, font-size;
+  width: 100%;
+  z-index: 9;
 }
 
 .carusel-text_first {
-  width: 280px;
-  top: 100px;
-  right: 120px;
   background-color: rgba(250, 250, 250, .9);
+  -webkit-box-shadow: 0 0 15px #444;
+          box-shadow: 0 0 15px #444;
   color: #444;
-  box-shadow: 0 0 15px #444;
 }
 
 .carusel-text_second {
-  width: 250px;
-  top: 155px;
-  right: 70px;
   background-color: rgba(68, 68, 68, .5);
+  -webkit-box-shadow: 0 0 15px #fafafa;
+          box-shadow: 0 0 15px #fafafa;
   color: #fafafa;
-  box-shadow: 0 0 15px #fafafa;
 }
 
 .carusel-text_third {
-  width: 335px;
-  top: 100px;
-  right: 120px;
   background-color: rgba(68, 68, 68, .5);
+  -webkit-box-shadow: 0 0 15px #fafafa;
+          box-shadow: 0 0 15px #fafafa;
   color: #fafafa;
-  box-shadow: 0 0 15px #fafafa;
 }
 
 .carusel-text_fourth {
-  width: 290px;
-  top: 120px;
-  left: 100px;
   background-color: rgba(250, 250, 250, .9);
+  -webkit-box-shadow: 0 0 15px #444;
+          box-shadow: 0 0 15px #444;
   color: #444;
-  box-shadow: 0 0 15px #444;
 }
 
 .carusel-img {
@@ -82,55 +95,161 @@
 }
 
 .carusel-navigation {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  position: relative;
-  right: 31px;
-  width: 0;
+  display: none;
 }
 
 .carusel-arrow-top, .carusel-arrow-bottom {
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   height: 62px;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 62px;
 }
 
 .carusel-arrow-item, .carusel-arrow-item {
   display: block;
   height: 1px;
-  transition-duration: .5s;
-  transition-duration: var(--main-transition-duration);
+  -webkit-transition-duration: .5s;
+       -o-transition-duration: .5s;
+          transition-duration: .5s;
+  -webkit-transition-duration: var(--main-transition-duration);
+       -o-transition-duration: var(--main-transition-duration);
+          transition-duration: var(--main-transition-duration);
+  -webkit-transition-property: background-color;
+  -o-transition-property: background-color;
   transition-property: background-color;
   width: 25px;
 }
 
 .carusel-arrow-item:first-child, .carusel-arrow-item:first-child {
-  transform: translateX(8px) translateY(-1px) rotate(45deg);
+  -webkit-transform: translateX(8px) translateY(-1px) rotate(45deg);
+      -ms-transform: translateX(8px) translateY(-1px) rotate(45deg);
+          transform: translateX(8px) translateY(-1px) rotate(45deg);
 }
 
 .carusel-arrow-item:last-child, .carusel-arrow-item:last-child {
-  transform: translateX(-9px) translateY(-2px) rotate(-45deg);
+  -webkit-transform: translateX(-9px) translateY(-2px) rotate(-45deg);
+      -ms-transform: translateX(-9px) translateY(-2px) rotate(-45deg);
+          transform: translateX(-9px) translateY(-2px) rotate(-45deg);
 }
 
 .carusel-arrow-bottom {
-  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 
 .carusel-status-bar-item {
+  background-color: transparent;
+  border-color: transparent;
   border-radius: 50%;
   border-style: solid;
   border-width: 1px;
   display: block;
   height: 9px;
   margin: 5px;
-  transition-duration: .5s;
-  transition-duration: var(--main-transition-duration);
+  -webkit-transition-duration: .5s;
+       -o-transition-duration: .5s;
+          transition-duration: .5s;
+  -webkit-transition-duration: var(--main-transition-duration);
+       -o-transition-duration: var(--main-transition-duration);
+          transition-duration: var(--main-transition-duration);
+  -webkit-transition-property: background-color, border-color;
+  -o-transition-property: background-color, border-color;
   transition-property: background-color, border-color;
   width: 9px;
+}
+
+@media (min-width: 576px) {
+  .carusel-text {
+    border-radius: 5px;
+    bottom: auto;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  .carusel-text_first {
+    right: 15%;
+    top: 5%;
+    width: 32%;
+  }
+  
+  .carusel-text_second {
+    right: 11%;
+    top: 12%;
+    width: 32%;
+  }
+  
+  .carusel-text_third {
+    right: 12%;
+    top: 10%;
+    width: 36%;
+  }
+  
+  .carusel-text_fourth {
+    left: 15%;
+    top: 46%;
+    width: 27%;
+  }
+
+  .carusel-navigation {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    position: relative;
+    right: 31px;
+    width: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .carusel-text {
+    font-size: 17px;
+  }
+}
+
+@media (min-width: 992px) {
+  .carusel-text_first {
+    right: 16%;
+    top: 17%;
+    width: 27%;
+  }
+  
+  .carusel-text_second {
+    top: 31%;
+    width: 25%;
+  }
+  
+  .carusel-text_third {
+    right: 13%;
+    top: 20%;
+    width: 32%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .carusel-text {
+    font-size: 19px;
+  }
 }

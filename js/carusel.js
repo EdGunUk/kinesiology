@@ -24,6 +24,7 @@ function createStatusBarItem() {
     let statusBarItem = document.createElement("s");
     statusBarItem.classList.add("carusel-status-bar-item");
     body.querySelector(".carusel-status-bar").appendChild(statusBarItem);
+
     statusBarItemArr.push(statusBarItem);
   });
 }
@@ -40,6 +41,7 @@ let counter = 0;
 
 function chengeStatusBarColor() {
   statusBarColor = imagesArr[counter].dataset.statusBarColor;
+
   statusBarItemArr.forEach(function(item) {
     item.style.borderColor = setColorAsVariable(statusBarColor);
   });
@@ -49,6 +51,7 @@ function highlightStatusBarItem() {
   statusBarItemArr.forEach(function(item) {
     item.style.backgroundColor = "";
   });
+
   statusBarItemArr[counter].style.backgroundColor = setColorAsVariable(statusBarColor);
 }
 
@@ -75,17 +78,32 @@ let dalayAppearCaruselText = 1000;
 
 function delayCaruselText() {
   setTimeout(showCaruselText, dalayAppearCaruselText);
-  timerDisappearCaruselText = setTimeout(hideCaruselText, runCaruselInterval - dalayAppearCaruselText);
+  timerDisappearCaruselText = setTimeout(
+    function() {
+      if(isFunction(clearTimerCaruselAndText)) {
+        clearTimerCaruselAndText();
+        return;
+      }
+
+      hideCaruselText();
+    }, runCaruselInterval - dalayAppearCaruselText);
 }
 
-function chengeImage() {
+function chengeImage(resize) {
+  if(resize === "resize") {
+    gallery.style.transitionDuration = "0s";
+  }
+  
   let newPosition = imageHeight * counter;
+  gallery.style.WebkitTransform = "translateY(" + (-newPosition) + "px)";
   gallery.style.transform = "translateY(" + (-newPosition) + "px)";
+  
+  setTimeout(function() {
+    gallery.style.transitionDuration = "";
+  }, 2000);
 }
 
 function runCarusel(direction) {
-  hideCaruselText();
-
   if(direction === "normal") {
     counter++;
     if(counter >= imagesArr.length) counter = 0;
@@ -106,28 +124,64 @@ let timerRunCarusel;
 
 function runCaruselWithInterval() {
   timerRunCarusel = setTimeout(function() {
+    if(isFunction(clearTimerCaruselAndText)) {
+      clearTimerCaruselAndText();
+      showCaruselText();
+      return;
+    }
+
     runCarusel("normal");
     runCaruselWithInterval();
   }, runCaruselInterval);
-
-  // timerRunCarusel = setInterval(function() {
-  //   runCarusel("normal");
-  // }, runCaruselInterval);
 }
 
-function stopCaruselWithInterval() {
-  clearTimeout(timerRunCarusel);
-  clearTimeout(timerDisappearCaruselText);
+let clearTimerCaruselAndText;
+
+function isFunction(func) {
+  return typeof func === "function";
 }
 
+function stopCaruselWithInterval(timerDisappearCaruselText, timerRunCarusel) {
+  return function() {
+    clearTimeout(timerDisappearCaruselText);
+    clearTimeout(timerRunCarusel);
+    clearTimerCaruselAndText = null;
+  };
+}
+
+function mouseoverCarusel() {
+  clearTimerCaruselAndText = stopCaruselWithInterval(timerDisappearCaruselText, timerRunCarusel);
+}
+
+function mouseoutCarusel() {
+  if(isFunction(clearTimerCaruselAndText)) {
+    clearTimerCaruselAndText = null;
+    return;
+  }
+  
+  hideCaruselText();
+  setTimeout(function() {
+    runCarusel("normal");
+    runCaruselWithInterval();
+  }, 1000);
+}
+
+function clickOnArrow(direction) {
+  stopCaruselWithInterval(timerDisappearCaruselText, timerRunCarusel)();
+  hideCaruselText();
+  runCarusel(direction);
+  runCaruselWithInterval();
+}
 // ------------------------------------------------------------------ //
 
 function initialStartCarusel() {
   resizeHeightCarusel();
   resizeHeightGallery();
   createStatusBarItem();
-  chengeStatusBarColor();
-  highlightStatusBarItem();
+  setTimeout(function() {
+    chengeStatusBarColor();
+    highlightStatusBarItem();
+  }, 0);
   chengeArrowsColor();
   delayCaruselText();
   runCaruselWithInterval();
@@ -139,35 +193,24 @@ let arrowBottom = body.querySelector(".carusel-arrow-bottom");
 function defineEvent() {
   window.addEventListener("resize", resizeHeightCarusel);
   window.addEventListener("resize", resizeHeightGallery);
-  window.addEventListener("resize", chengeImage);
+  window.addEventListener("resize",
+    function() {
+      chengeImage("resize");
+    });
 
-  gallery.addEventListener("mouseout", runCaruselWithInterval);
-  gallery.addEventListener("mouseover", stopCaruselWithInterval);
+  gallery.addEventListener("mouseover", mouseoverCarusel);
+  gallery.addEventListener("mouseout", mouseoutCarusel);
 
-  arrowTop.addEventListener("click", function() {
-    runCarusel("reverse");
-  });
-  arrowTop.addEventListener("click", stopCaruselWithInterval);
-  arrowTop.addEventListener("mouseout", runCaruselWithInterval);
-  arrowTop.addEventListener("mouseover", stopCaruselWithInterval);
+  arrowTop.addEventListener("click",
+    function() {
+      clickOnArrow("reverse");
+    });
 
-  arrowBottom.addEventListener("click", function() {
-    runCarusel("normal");
-  });
-  arrowBottom.addEventListener("click", stopCaruselWithInterval);
-  arrowBottom.addEventListener("mouseout", runCaruselWithInterval);
-  arrowBottom.addEventListener("mouseover", stopCaruselWithInterval);
+  arrowBottom.addEventListener("click",
+    function() {
+      clickOnArrow("normal");
+    });
 }
 
 initialStartCarusel();
 defineEvent();
-
-
-
-
-
-
-
-
-
-
