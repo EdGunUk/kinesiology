@@ -8,7 +8,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 71px 0 10px;
+  margin-top: 71px;
   overflow: hidden;
 }
 
@@ -53,9 +53,9 @@
   -webkit-transition-duration: var(--carusel-transition-duration);
        -o-transition-duration: var(--carusel-transition-duration);
           transition-duration: var(--carusel-transition-duration);
-  -webkit-transition-property: opacity, width, top, right, font-size;
-  -o-transition-property: opacity, width, top, right, font-size;
-  transition-property: opacity, width, top, right, font-size;
+  -webkit-transition-property: opacity, top, right, font-size;
+  -o-transition-property: opacity, top, right, font-size;
+  transition-property: opacity, top, right, font-size;
   width: 100%;
   z-index: 9;
 }

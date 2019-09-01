@@ -4,7 +4,7 @@ body {
 
 .header {
   background-color: rgb(86, 61, 124);
-  background-color: var(--main-colr);
+  background-color: var(--main-color);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -24,7 +24,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   background-color: rgb(86, 61, 124);
-  background-color: var(--main-colr);
+  background-color: var(--main-color);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -34,7 +34,7 @@ body {
 
 .logo-img, .icon-hamburger {
   background-color: rgb(86, 61, 124);
-  background-color: var(--main-colr);
+  background-color: var(--main-color);
   -webkit-box-sizing: content-box;
           box-sizing: content-box;
   padding: 7px 17px;
@@ -98,7 +98,7 @@ body {
 
 .menu {
   background-color: rgb(86, 61, 124);
-  background-color: var(--main-colr);
+  background-color: var(--main-color);
   bottom: -236px;
   margin: 0;
   padding: 10px 0 10px;
@@ -143,7 +143,7 @@ body {
   background-color: rgb(255, 255, 255);
   background-color: var(--header-text-color);
   color: rgb(86, 61, 124);
-  color: var(--main-colr);
+  color: var(--main-color);
   font-weight: 400;
 }
 
@@ -213,7 +213,7 @@ body {
 
   .menu-link:hover {
     background-color: rgb(86, 61, 124);
-    background-color: var(--main-colr);
+    background-color: var(--main-color);
     color: rgb(255, 255, 255);
     color: var(--header-text-color);
     font-weight: 200;

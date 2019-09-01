@@ -75,6 +75,8 @@ function hideCaruselText() {
 let timerDisappearCaruselText;
 let runCaruselInterval = 10000;
 let dalayAppearCaruselText = 1000;
+let dalayDisappearCaruselText = runCaruselInterval - dalayAppearCaruselText;
+let delaRunCarusel = dalayAppearCaruselText;
 
 function delayCaruselText() {
   setTimeout(showCaruselText, dalayAppearCaruselText);
@@ -86,11 +88,12 @@ function delayCaruselText() {
       }
 
       hideCaruselText();
-    }, runCaruselInterval - dalayAppearCaruselText);
+    }, dalayDisappearCaruselText);
 }
 
 function chengeImage(resize) {
   if(resize === "resize") {
+    gallery.style.WebkitTransitionDuration = "0s";
     gallery.style.transitionDuration = "0s";
   }
   
@@ -99,6 +102,7 @@ function chengeImage(resize) {
   gallery.style.transform = "translateY(" + (-newPosition) + "px)";
   
   setTimeout(function() {
+    gallery.style.WebkitTransitionDuration = "";
     gallery.style.transitionDuration = "";
   }, 2000);
 }
@@ -163,7 +167,7 @@ function mouseoutCarusel() {
   setTimeout(function() {
     runCarusel("normal");
     runCaruselWithInterval();
-  }, 1000);
+  }, delaRunCarusel);
 }
 
 function clickOnArrow(direction) {
@@ -172,6 +176,7 @@ function clickOnArrow(direction) {
   runCarusel(direction);
   runCaruselWithInterval();
 }
+
 // ------------------------------------------------------------------ //
 
 function initialStartCarusel() {
