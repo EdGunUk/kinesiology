@@ -53,9 +53,9 @@
   -webkit-transition-duration: var(--carusel-transition-duration);
        -o-transition-duration: var(--carusel-transition-duration);
           transition-duration: var(--carusel-transition-duration);
-  -webkit-transition-property: opacity, top, right, font-size;
-  -o-transition-property: opacity, top, right, font-size;
-  transition-property: opacity, top, right, font-size;
+  -webkit-transition-property: opacity, top, right;
+  -o-transition-property: opacity, top, right;
+  transition-property: opacity, top, right;
   width: 100%;
   z-index: 9;
 }

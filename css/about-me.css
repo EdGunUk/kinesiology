@@ -1,0 +1,50 @@
+.main-link {
+  text-decoration: none;
+  color: #0070c9;
+}
+  
+.main-link:hover {
+  text-decoration: underline;
+}
+
+.main-quotes {
+  font-style: italic;
+  quotes: "\00ab" "\00bb";
+}
+
+.about-me {
+  max-width: 1140px;
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+.about-me__paragraf {
+  font-family: San-Francisco;
+  font-size: 19px;
+  font-style: normal;
+  font-weight: 100;
+}
+
+.about-me-gallery {
+  display: flex;
+  align-items: center;
+  margin: -5px;
+}
+
+.about-me-column {
+  display: flex;
+  flex-direction: column;
+  max-width: 8.333333%;
+}
+
+.about-me-item {
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+.about-me-column__img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 5px;
+}
