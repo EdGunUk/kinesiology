@@ -14,8 +14,8 @@
 
 .about-me {
   max-width: 1140px;
-  padding-left: 5px;
-  padding-right: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .about-me-gallery {
@@ -28,7 +28,7 @@
 .about-me-column {
   display: flex;
   flex-direction: column;
-  max-width: 8.333333%;
+  max-width: 33.333333%;
 }
 
 .about-me-item {
@@ -41,4 +41,38 @@
   display: block;
   height: auto;
   max-width: 100%;
+}
+
+.display-none-576-flex, .display-none-768-flex, .display-none-992-flex {
+  display: none;
+}
+
+@media (min-width: 576px) {
+  .display-none-576-flex {
+    display: flex;
+  }
+
+  .about-me-column {
+    max-width: 16.666667%;
+  }
+}
+
+@media (min-width: 768px) {
+  .display-none-768-flex {
+    display: flex;
+  }
+
+  .about-me-column {
+    max-width: 11.111111%;
+  }
+}
+
+@media (min-width: 992px) {
+  .display-none-992-flex {
+    display: flex;
+  }
+
+  .about-me-column {
+    max-width: 8.333333%;
+  }
 }
