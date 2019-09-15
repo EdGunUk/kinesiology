@@ -1,5 +1,6 @@
 .main-link {
-  color: #0070c9;
+  color: rgb(0, 112, 201);
+  color: var(--main-link-color);
   text-decoration: none;
 }
   
@@ -19,20 +20,32 @@
 }
 
 .about-me-gallery {
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin: -5px;
 }
 
 .about-me-column {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   max-width: 33.333333%;
 }
 
 .about-me-item {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   padding: 5px;
 }
 
@@ -49,6 +62,8 @@
 
 @media (min-width: 576px) {
   .display-none-576-flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
   }
 
@@ -59,6 +74,8 @@
 
 @media (min-width: 768px) {
   .display-none-768-flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
   }
 
@@ -69,6 +86,8 @@
 
 @media (min-width: 992px) {
   .display-none-992-flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
   }
 

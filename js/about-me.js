@@ -29,16 +29,13 @@ function searchItemInNonexistentColumn(width, arrItem) {
 
 function putItemInExistingColumn(arrExistingColumn, arrItemInNonexistentColumn) {
   let counter = 0;
-  while (arrItemInNonexistentColumn.length) {
-
+  while (counter < arrItemInNonexistentColumn.length) {
     for(let i = 0; i < arrExistingColumn.length; i++) {
 
       if(counter >= arrItemInNonexistentColumn.length) break;
       arrExistingColumn[i].append(arrItemInNonexistentColumn[counter]);
       counter++;
     }
-
-    if(counter >= arrItemInNonexistentColumn.length) break;
   }
 }
 
