@@ -10,4 +10,7 @@
   --carusel-navigation-color-444: rgb(68, 68, 68);
   --carusel-navigation-color-fff: rgb(250, 250, 250);
   --carusel-transition-duration: 2s;
+
+  --contacts-link-text: rgb(68, 68, 68);
+  --contacts-link-text-hover: rgb(0, 112, 201);
 }

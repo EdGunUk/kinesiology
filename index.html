@@ -13,7 +13,20 @@
   <link rel="stylesheet" type="text/css" href="css/carusel.css">
   <link rel="stylesheet" type="text/css" href="css/services.css">
   <link rel="stylesheet" type="text/css" href="css/about-me.css">
+  <link rel="stylesheet" type="text/css" href="css/contacts.css">
   <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+  <script src="https://maps.api.2gis.ru/2.0/loader.js?pkg=full"></script>
+  <script type="text/javascript">
+    var map;
+
+    DG.then(function () {
+        map = DG.map('map', {
+            center: [54.98, 82.89],
+            zoom: 13
+        });
+    DG.marker([54.98, 82.89]).addTo(map).bindPopup('Вы кликнули по мне!');
+    });
+</script>
 </head>
 <body>
   <header class="header">
@@ -519,6 +532,114 @@
     </div>
 
     <h1 class="main-header1"># КОНТАКТЫ</h1>
+    <div class="background-container">
+      <div class="contacts">
+
+        <h3 class="main-header3">Локация приема и проведения занятий йогои</h3>
+        <div id="map" style="height:400px"></div>
+
+        <div class="services-grid">
+          <div class="main-grid-item-3">
+            <h3 class="main-header3">Ресурсы с самыми свежими новостями</h3>
+
+            <!-- appendix link -->
+            <!-- <a href="instagram://user?username=back_to_myself_studio" class="contacts-link"> -->
+            <!-- web link -->
+            <a href="https://www.instagram.com/back_to_myself_studio/" class="contacts-link">
+              <svg class="contacts-link__svg" version="1.1" height="50" width="50" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                <linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="-46.0041" y1="634.1208" x2="-32.9334" y2="647.1917" gradientTransform="matrix(32 0 0 -32 1519 20757)">
+                  <stop  offset="0" style="stop-color:#FFC107"/>
+                  <stop  offset="0.507" style="stop-color:#F44336"/>
+                  <stop  offset="0.99" style="stop-color:#9C27B0"/>
+                </linearGradient>
+                <path style="fill:url(#SVGID_1_);" d="M352,0H160C71.648,0,0,71.648,0,160v192c0,88.352,71.648,160,160,160h192
+                c88.352,0,160-71.648,160-160V160C512,71.648,440.352,0,352,0z M464,352c0,61.76-50.24,112-112,112H160c-61.76,0-112-50.24-112-112
+                V160C48,98.24,98.24,48,160,48h192c61.76,0,112,50.24,112,112V352z"/>
+                <linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="-42.2971" y1="637.8279" x2="-36.6404" y2="643.4846" gradientTransform="matrix(32 0 0 -32 1519 20757)">
+                  <stop  offset="0" style="stop-color:#FFC107"/>
+                  <stop  offset="0.507" style="stop-color:#F44336"/>
+                  <stop  offset="0.99" style="stop-color:#9C27B0"/>
+                </linearGradient>
+                <path style="fill:url(#SVGID_2_);" d="M256,128c-70.688,0-128,57.312-128,128s57.312,128,128,128s128-57.312,128-128
+                S326.688,128,256,128z M256,336c-44.096,0-80-35.904-80-80c0-44.128,35.904-80,80-80s80,35.872,80,80
+                C336,300.096,300.096,336,256,336z"/>
+                <linearGradient id="SVGID_3_" gradientUnits="userSpaceOnUse" x1="-35.5456" y1="644.5793" x2="-34.7919" y2="645.3331" gradientTransform="matrix(32 0 0 -32 1519 20757)">
+                  <stop  offset="0" style="stop-color:#FFC107"/>
+                  <stop  offset="0.507" style="stop-color:#F44336"/>
+                  <stop  offset="0.99" style="stop-color:#9C27B0"/>
+                </linearGradient>
+                <circle style="fill:url(#SVGID_3_);" cx="393.6" cy="118.4" r="17.056"/>
+              </svg>
+              <p class="contacts-link__text">INSTAGRAM</p>
+            </a>
+
+            <!--faceboock only web link -->
+            <a href="https://www.facebook.com/profile.php?id=100041129270478" class="contacts-link">
+              <svg class="contacts-link__svg" version="1.1" height="50" width="50" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                <path style="fill:#1976D2;" d="M448,0H64C28.704,0,0,28.704,0,64v384c0,35.296,28.704,64,64,64h384c35.296,0,64-28.704,64-64V64
+                C512,28.704,483.296,0,448,0z"/>
+                <path style="fill:#FAFAFA;" d="M432,256h-80v-64c0-17.664,14.336-16,32-16h32V96h-64l0,0c-53.024,0-96,42.976-96,96v64h-64v80h64
+                v176h96V336h48L432,256z"/>
+             </svg>
+             <p class="contacts-link__text">FACEBOOCK</p>
+            </a>
+          </div>
+
+          <div class="main-grid-item-3">
+            <h3 class="main-header3">Ресурсы для обратной связи</h3>
+
+            <!-- web link -->
+
+            <!-- appendix link for desktop-->
+            <!-- <a href="viber://chat?number=+380978980087" class="contacts-link"> -->
+            <!-- appendix link for mobile-->
+            <a href="viber://add?number=380978980087" class="contacts-link">
+              <svg class="contacts-link__svg" enable-background="new 0 0 24 24" height="50" viewBox="0 0 24 24" width="50" xmlns="http://www.w3.org/2000/svg"><g fill="#8e24aa">
+                <path d="m23.155 13.893c.716-6.027-.344-9.832-2.256-11.553l.001-.001c-3.086-2.939-13.508-3.374-17.2.132-1.658 1.715-2.242 4.232-2.306 7.348-.064 3.117-.14 8.956 5.301 10.54h.005l-.005 2.419s-.037.98.589 1.177c.716.232 1.04-.223 3.267-2.883 3.724.323 6.584-.417 6.909-.525.752-.252 5.007-.815 5.695-6.654zm-12.237 5.477s-2.357 2.939-3.09 3.702c-.24.248-.503.225-.499-.267 0-.323.018-4.016.018-4.016-4.613-1.322-4.341-6.294-4.291-8.895.05-2.602.526-4.733 1.93-6.168 3.239-3.037 12.376-2.358 14.704-.17 2.846 2.523 1.833 9.651 1.839 9.894-.585 4.874-4.033 5.183-4.667 5.394-.271.09-2.786.737-5.944.526z"/>
+                <path d="m12.222 4.297c-.385 0-.385.6 0 .605 2.987.023 5.447 2.105 5.474 5.924 0 .403.59.398.585-.005h-.001c-.032-4.115-2.718-6.501-6.058-6.524z"/>
+                <path d="m16.151 10.193c-.009.398.58.417.585.014.049-2.269-1.35-4.138-3.979-4.335-.385-.028-.425.577-.041.605 2.28.173 3.481 1.729 3.435 3.716z"/>
+                <path d="m15.521 12.774c-.494-.286-.997-.108-1.205.173l-.435.563c-.221.286-.634.248-.634.248-3.014-.797-3.82-3.951-3.82-3.951s-.037-.427.239-.656l.544-.45c.272-.216.444-.736.167-1.247-.74-1.337-1.237-1.798-1.49-2.152-.266-.333-.666-.408-1.082-.183h-.009c-.865.506-1.812 1.453-1.509 2.428.517 1.028 1.467 4.305 4.495 6.781 1.423 1.171 3.675 2.371 4.631 2.648l.009.014c.942.314 1.858-.67 2.347-1.561v-.007c.217-.431.145-.839-.172-1.106-.562-.548-1.41-1.153-2.076-1.542z"/>
+                <path d="m13.169 8.104c.961.056 1.427.558 1.477 1.589.018.403.603.375.585-.028-.064-1.346-.766-2.096-2.03-2.166-.385-.023-.421.582-.032.605z"/></g>
+              </svg>
+              <p class="contacts-link__text">VIBER</p>
+            </a>
+
+            <!-- web link -->
+            <!-- <a href="https://web.telegram.org/#/im?p=@BackToMyself_Studio" class="contacts-link"> -->
+            <!-- appendix link -->
+            <a href="tg://resolve?domain=BackToMyself_Studio" class="contacts-link">
+              <svg class="contacts-link__svg" enable-background="new 0 0 24 24" height="50" viewBox="0 0 24 24" width="50" xmlns="http://www.w3.org/2000/svg">
+                <path d="m9.417 15.181-.397 5.584c.568 0 .814-.244 1.109-.537l2.663-2.545 5.518 4.041c1.012.564 1.725.267 1.998-.931l3.622-16.972.001-.001c.321-1.496-.541-2.081-1.527-1.714l-21.29 8.151c-1.453.564-1.431 1.374-.247 1.741l5.443 1.693 12.643-7.911c.595-.394 1.136-.176.691.218z" fill="#039be5"/>
+              </svg>
+              <p class="contacts-link__text">TELEGRAMM</p>
+            </a>
+          </div>
+
+          <div class="main-grid-item-3">
+            <h3 class="main-header3">Также всегда можно связаться по телефону</h3>
+            <a href="tel:0978980087" class="contacts-link">
+              <svg class="contacts-link__svg" version="1.1" height="50" width="50" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve" fill="#563d7c">
+                <g>
+                  <path d="M256,32c123.5,0,224,100.5,224,224S379.5,480,256,480S32,379.5,32,256S132.5,32,256,32 M256,0C114.625,0,0,114.625,0,256
+                    s114.625,256,256,256s256-114.625,256-256S397.375,0,256,0L256,0z M398.719,341.594l-1.438-4.375
+                    c-3.375-10.062-14.5-20.562-24.75-23.375L334.688,303.5c-10.25-2.781-24.875,0.969-32.405,8.5l-13.688,13.688
+                    c-49.75-13.469-88.781-52.5-102.219-102.25l13.688-13.688c7.5-7.5,11.25-22.125,8.469-32.406L198.219,139.5
+                    c-2.781-10.25-13.344-21.375-23.406-24.75l-4.313-1.438c-10.094-3.375-24.5,0.031-32,7.563l-20.5,20.5
+                    c-3.656,3.625-6,14.031-6,14.063c-0.688,65.063,24.813,127.719,70.813,173.75c45.875,45.875,108.313,71.345,173.156,70.781
+                    c0.344,0,11.063-2.281,14.719-5.938l20.5-20.5C398.688,366.062,402.062,351.656,398.719,341.594z"/>
+                </g>
+              </svg>
+              <p class="contacts-link__text">0978980087</p>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <h1 class="main-header1"># МЕРОПРИЯТИЯ</h1>
     
   </main>
 
@@ -530,3 +651,4 @@
   <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 
 </body>
+</html>
