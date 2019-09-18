@@ -1,0 +1,24 @@
+.footer {
+  height: 50px;
+  background-color: var(--main-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer-copiright {
+  color: rgb(190, 190, 190);
+  font-family: San-Francisco;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 100;
+}
+
+.footer-copiright__link {
+  color: rgb(190, 190, 190);
+  text-decoration: none;
+}
+
+.footer-copiright__link:hover {
+  color: rgb(255, 255, 255);
+  /* text-decoration: underline; */
+}

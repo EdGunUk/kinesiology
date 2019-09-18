@@ -26,6 +26,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  outline: none;
   text-decoration: none;
 }
 
@@ -35,7 +36,7 @@
 }
 
 .contacts-link__text {
-  color: rgb(68, 68, 68);
+  color: rgb(0, 0, 0);
   color: var(--contacts-link-text);
   font-family: San-Francisco;
   font-size: 18px;
@@ -47,7 +48,6 @@
 .contacts-link:hover .contacts-link__text {
   color:rgb(0, 112, 201);
   color: var(--contacts-link-text-hover);
-  text-decoration: underline;
 }
 
 @media (min-width: 768px) {

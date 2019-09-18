@@ -1,6 +1,7 @@
 .main-link {
   color: rgb(0, 112, 201);
   color: var(--main-link-color);
+  outline: none;
   text-decoration: none;
 }
   

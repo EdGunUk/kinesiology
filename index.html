@@ -1,654 +1,648 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> -->
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Kinesiology</title>
-  <!-- <link rel="stylesheet" type="text/css" href="css/bootstrap-grid.css"> -->
-  <link rel="stylesheet" type="text/css" href="css/fonts.css">
-  <link rel="stylesheet" type="text/css" href="css/variables.css">
-  <link rel="stylesheet" type="text/css" href="css/header.css">
-  <link rel="stylesheet" type="text/css" href="css/carusel.css">
-  <link rel="stylesheet" type="text/css" href="css/services.css">
-  <link rel="stylesheet" type="text/css" href="css/about-me.css">
-  <link rel="stylesheet" type="text/css" href="css/contacts.css">
-  <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
-  <script src="https://maps.api.2gis.ru/2.0/loader.js?pkg=full"></script>
-  <script type="text/javascript">
-    var map;
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    DG.then(function () {
-        map = DG.map('map', {
-            center: [54.98, 82.89],
-            zoom: 13
-        });
-    DG.marker([54.98, 82.89]).addTo(map).bindPopup('Вы кликнули по мне!');
-    });
-</script>
-</head>
-<body>
-  <header class="header">
-    <a class="logo" href="">
-      <img class="logo-img" src="img/logo/logo.png" alt="logo" width="33" height="47">
-      <span class="logo-text">BACK TO MAYSELF</span>
-    </a>
-    <a class="icon-hamburger" href="">
-      <s class="icon-hamburger-item"></s>
-      <s class="icon-hamburger-item"></s>
-      <s class="icon-hamburger-item"></s>
-    </a>
-    <ul class="menu menu_close">
-      <li class="menu-item">
-        <a class="menu-link" href="">ГЛАВНАЯ
-          <span class="menu-link__underline"></span>
-        </a>
-      </li>
-      <li class="menu-item">
-        <a class="menu-link" href="">УСЛУГИ
-          <span class="menu-link__underline"></span>
-        </a>
-      </li>
-      <li class="menu-item">
-        <a class="menu-link" href="">ОБО МНЕ
-          <span class="menu-link__underline"></span>
-        </a>
-      </li>
-      <li class="menu-item">
-        <a class="menu-link" href="">КОНТАКТЫ
-          <span class="menu-link__underline"></span>
-        </a>
-      </li>
-      <li class="menu-item">
-        <a class="menu-link" href="">МЕРОПРИЯТИЯ
-          <span class="menu-link__underline"></span>
-        </a>
-      </li>
-    </ul>
-  </header>
+    <title>Kinesiology</title>
 
-  <div class="carusel">
-    <ul class="carusel-gallery">
-      <li class="carusel-item">
-        <div class="carusel-text carusel-text_first">
-          Возможно, Вы не сможете контролировать весь мир, но Вы можете научиться контролировать свой внутренний мир через йогу.
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/fonts.css">
+    <link rel="stylesheet" type="text/css" href="css/variables.css">
+    <link rel="stylesheet" type="text/css" href="css/header.css">
+    <link rel="stylesheet" type="text/css" href="css/carusel.css">
+    <link rel="stylesheet" type="text/css" href="css/services.css">
+    <link rel="stylesheet" type="text/css" href="css/about-me.css">
+    <link rel="stylesheet" type="text/css" href="css/contacts.css">
+    <link rel="stylesheet" type="text/css" href="css/footer.css">
+    <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+
+    <script src="https://maps.api.2gis.ru/2.0/loader.js?pkg=full"></script>
+    <script type="text/javascript">
+      var map;
+
+      DG.then(function () {
+          map = DG.map('map', {
+              center: [54.98, 82.89],
+              zoom: 13
+          });
+      DG.marker([54.98, 82.89]).addTo(map).bindPopup('Вы кликнули по мне!');
+      });
+    </script>
+  </head>
+
+  <body>
+    <header class="header">
+      <a target="_blank" class="logo" href="">
+        <img class="logo-img" width="33" height="47" src="img/logo/logo.png" alt="logo">
+        <span class="logo-text">BACK TO MAYSELF</span>
+      </a>
+      <a target="_blank" class="icon-hamburger" href="">
+        <s class="icon-hamburger-item"></s>
+        <s class="icon-hamburger-item"></s>
+        <s class="icon-hamburger-item"></s>
+      </a>
+      <ul class="menu menu_close">
+        <li class="menu-item">
+          <a target="_blank" class="menu-link" href="">ГЛАВНАЯ
+            <span class="menu-link__underline"></span>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a target="_blank" class="menu-link" href="">УСЛУГИ
+            <span class="menu-link__underline"></span>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a target="_blank" class="menu-link" href="">ОБО МНЕ
+            <span class="menu-link__underline"></span>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a target="_blank" class="menu-link" href="">КОНТАКТЫ
+            <span class="menu-link__underline"></span>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a target="_blank" class="menu-link" href="">МЕРОПРИЯТИЯ
+            <span class="menu-link__underline"></span>
+          </a>
+        </li>
+      </ul>
+    </header>
+
+    <div class="carusel">
+      <ul class="carusel-gallery">
+        <li class="carusel-item">
+          <div class="carusel-text carusel-text_first">
+            Возможно, Вы не сможете контролировать весь мир, но Вы можете научиться контролировать свой внутренний мир через йогу.
+          </div>
+          <img class="carusel-img" width="1140" height="528" data-arrow-color="carusel-navigation-color-444" data-status-bar-color="carusel-navigation-color-fff" src="img/carusel/yoga-nature.png" alt="yoga on nature">
+        </li>
+        <li class="carusel-item">
+          <div class="carusel-text carusel-text_second">
+            Позаботьтесь о своем теле, это единственное место, где вам нужно жить.
+          </div>
+          <img class="carusel-img" width="1140" height="528" data-arrow-color="carusel-navigation-color-fff" data-status-bar-color="carusel-navigation-color-444" src="img/carusel/osteopathy.png" alt="osteopathy">
+        </li>
+        <li class="carusel-item">
+          <div class="carusel-text carusel-text_third">
+            Соблюдайте баланс между физическим, духовным, умственным и эмоциональным своими состояниями и будете обладать самой большой ценностью.
+          </div>
+          <img class="carusel-img" width="1140" height="528" data-arrow-color="carusel-navigation-color-444" data-status-bar-color="carusel-navigation-color-444" src="img/carusel/yoga-gym.png" alt="yoga in the gym">
+        </li>
+        <li class="carusel-item">
+          <div class="carusel-text carusel-text_fourth">
+            Жизнь — как вождение велосипеда. Чтобы сохранить равновесие, ты должен двигаться.
+          </div>
+          <img class="carusel-img" width="1140" height="528" data-arrow-color="carusel-navigation-color-fff" data-status-bar-color="carusel-navigation-color-fff" src="img/carusel/pebbles.png" alt="pebbles">
+        </li>
+      </ul>
+      <div class="carusel-navigation">
+        <div class="carusel-arrow-top">
+          <s class="carusel-arrow-item"></s>
+          <s class="carusel-arrow-item"></s>
         </div>
-        <img class="carusel-img" src="img/carusel/yoga-nature.png" width="1140" height="528" data-arrow-color="carusel-navigation-color-444" data-status-bar-color="carusel-navigation-color-fff">
-      </li>
-      <li class="carusel-item">
-        <div class="carusel-text carusel-text_second">
-          Позаботьтесь о своем теле, это единственное место, где вам нужно жить.
+        <div class="carusel-status-bar"></div>
+        <div class="carusel-arrow-bottom">
+          <s class="carusel-arrow-item"></s>
+          <s class="carusel-arrow-item"></s>
         </div>
-        <img class="carusel-img" src="img/carusel/osteopathy.png" width="1140" height="528" data-arrow-color="carusel-navigation-color-fff" data-status-bar-color="carusel-navigation-color-444">
-      </li>
-      <li class="carusel-item">
-        <div class="carusel-text carusel-text_third">
-          Соблюдайте баланс между физическим, духовным, умственным и эмоциональным своими состояниями и будете обладать самой большой ценностью.
-        </div>
-        <img class="carusel-img" src="img/carusel/yoga-gym.png" width="1140" height="528" data-arrow-color="carusel-navigation-color-444" data-status-bar-color="carusel-navigation-color-444">
-      </li>
-      <li class="carusel-item">
-        <div class="carusel-text carusel-text_fourth">
-          Жизнь — как вождение велосипеда. Чтобы сохранить равновесие, ты должен двигаться.
-        </div>
-        <img class="carusel-img" src="img/carusel/pebbles.png" width="1140" height="528" data-arrow-color="carusel-navigation-color-fff" data-status-bar-color="carusel-navigation-color-fff">
-      </li>
-    </ul>
-    <div class="carusel-navigation">
-      <div class="carusel-arrow-top">
-        <s class="carusel-arrow-item"></s>
-        <s class="carusel-arrow-item"></s>
-      </div>
-      <div class="carusel-status-bar"></div>
-      <div class="carusel-arrow-bottom">
-        <s class="carusel-arrow-item"></s>
-        <s class="carusel-arrow-item"></s>
       </div>
     </div>
-  </div>
 
-  <main class="main">
-
-    <h1 class="main-header1"># УСЛУГИ</h1>
-    <div class="background-container">
-      <div class="services">
-        <h2 class="main-header2">Прикладная Кинезиология — это восстановление функциональных связей организма между собой
+    <main class="main">
+      <h1 class="main-header1"># УСЛУГИ</h1>
+      <div class="background-container">
+        <div class="services">
+          <h2 class="main-header2">Прикладная Кинезиология — это восстановление функциональных связей организма между собой
           <br>Любая болезнь это следствие нашего жизненного процесса и привычек</h2>
-
-        <p class="main-paragraf"><a class="main-link" href="https://ru.m.wikipedia.org/wiki/%D0%9F%D1%80%D0%B8%D0%BA%D0%BB%D0%B0%D0%B4%D0%BD%D0%B0%D1%8F_%D0%BA%D0%B8%D0%BD%D0%B5%D0%B7%D0%B8%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%8F">Прикладная кинезиология</a> — вид альтернативной медицины, основанный в 1964 году Джорджем Гудхартом в США. Представляет собой хиропрактический метод диагностики и терапии, декларирующий связи мышечного напряжения (тонуса) с состоянием внутренних органов и систем организма и предлагающий способы корректирующего немедикаментозного воздействия на них.</p>
-
-        <div class="services-grid">
-          <div class="services-item">
-            <div class="services-content">
-              <img class="services-content__img" src="img/services/manual-muscle-testing.png" alt="">
+          <p class="main-paragraf"><a target="_blank" class="main-link" href="https://ru.m.wikipedia.org/wiki/%D0%9F%D1%80%D0%B8%D0%BA%D0%BB%D0%B0%D0%B4%D0%BD%D0%B0%D1%8F_%D0%BA%D0%B8%D0%BD%D0%B5%D0%B7%D0%B8%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%8F">Прикладная кинезиология</a> — вид альтернативной медицины, основанный в 1964 году Джорджем Гудхартом в США. Представляет собой хиропрактический метод диагностики и терапии, декларирующий связи мышечного напряжения (тонуса) с состоянием внутренних органов и систем организма и предлагающий способы корректирующего немедикаментозного воздействия на них.</p>
+          <div class="services-grid">
+            <div class="services-item">
+              <div class="services-content">
+                <img class="services-content__img" width="1000" height="1000" src="img/services/manual-muscle-testing.png" alt="manual muscle testing">
+              </div>
+              <h3 class="main-header3">Кинезиологическая диагностика и мануально мышечное тестирование тела</h3>
+              <p class="main-paragraf">Исследование тела человека проводится в несколько этапов, первым из которых станет визуальная диагностика, а вторым — мануально мышечное тестирование.</p>
+              <p class="main-paragraf">В процессе визуальной диагностики, в первую очередь, определяются зоны дифференциации в теле и приоритетный регион, который запустил процесс искревления. Также, определяется вторичный регион (компенсаторный), который найболее чувствительный. Следующим в процессе визуальной диагностики станет проверка патерна шага и уровень стабилизации пациента. Не менее важным на данном этапе является определение эмоционального состояния человека.</p>
+              <p class="main-paragraf">Опрос пациента и сбор анамнеза проводится для того, чтобы определить, что стало причиной имеющегося физического и психологического состояния человека на момент первичной визуальной диагностики.</p>
+              <p class="main-paragraf">Мануально мышечное тестирование проводится для определения неработающей миофасциальной цепи, которую составляют несколько мышц и связок, расположенных определённым образом по телу.</p>
+              <p class="main-paragraf">Кроме этого, определяется какого генеза нарушение, ведь, оно может быть мышечное или связочное. Не стоит забывать, что возможной причиной любого из этих нарушений может стать как внутренний орган, так и эмоциональный дисбаланс.</p>
             </div>
-            <h3 class="main-header3">Кинезиологическая диагностика и мануально мышечное тестирование тела</h3>
-            <p class="main-paragraf">Исследование тела человека проводится в несколько этапов, первым из которых станет визуальная диагностика, а вторым — мануально мышечное тестирование.</p>
-            <p class="main-paragraf">В процессе визуальной диагностики, в первую очередь, определяются зоны дифференциации в теле и приоритетный регион, который запустил процесс искревления. Также, определяется вторичный регион (компенсаторный), который найболее чувствительный. Следующим в процессе визуальной диагностики станет проверка патерна шага и уровень стабилизации пациента. Не менее важным на данном этапе является определение эмоционального состояния человека.</p>
-            <p class="main-paragraf">Опрос пациента и сбор анамнеза проводится для того, чтобы определить, что стало причиной имеющегося физического и психологического состояния человека на момент первичной визуальной диагностики.</p>
-            <p class="main-paragraf">Мануально мышечное тестирование проводится для определения неработающей миофасциальной цепи, которую составляют несколько мышц и связок, расположенных определённым образом по телу.</p>
-            <p class="main-paragraf">Кроме этого, определяется какого генеза нарушение, ведь, оно может быть мышечное или связочное. Не стоит забывать, что возможной причиной любого из этих нарушений может стать как внутренний орган, так и эмоциональный дисбаланс.</p>
-          </div>
-          <div class="services-item">
-            <div class="services-content">
-              <img class="services-content__img" src="img/services/primary-emotion-correction.png" alt="">
+            <div class="services-item">
+              <div class="services-content">
+                <img class="services-content__img" width="1000" height="1000" src="img/services/primary-emotion-correction.png" alt="primary emotion correction">
+              </div>
+              <h3 class="main-header3">Коррекция первичной эмоции</h3>
+              <p class="main-paragraf">Одним из самых важных факторов влияющих на нас, наше поведение, реакцию на определённые ситуации и, конечно же, на нашу жизнь является эмоциональное состояние. Оно может способствовать улучшению или же ухудшению нашего здоровья. В связи с этим, в жизни каждого человека особенно важен эмоциональный баланс. В случае его нарушения очень важно не забывать о возможных неблагоприятных последствиях и не игнорировать данную проблему.</p>
+              <p class="main-paragraf">Именно здесь нам поможет <a target="_blank" class="main-link" href="https://www.youtube.com/watch?v=C1LoGl_sykk&feature=youtu.be">КОРРЕКЦИЯ ПЕРВИЧНОЙ ЭМОЦИИ</a>.</p>
+              <p class="main-paragraf">Наши эмоции и чувства появляются и зависят от того, как мы относимся к своей реальности. Биология человека такова, что мы не всегда можем сами принимать решения. Это так называемое состояние <q class="main-quotes">понимаю, но ничего не могу с этим сделать</q>, которое знакомо почти каждому из нас. Причиной этому являются наши гормоны глюкокортикоиды, которые отвечают за наше настроение и реакцию на ту или иную провокацию.</p>
+              <p class="main-paragraf">У многих из нас в детстве или в пубертный период (половое созревание) происходили такие серьёзные эмоциональные ситуации как насилие, смерть близкого человека, болезнь, издевательства со стороны окружающих и отсутствие определённо важного внимания родителей. Все это нервная система воспринимает, как высокий уровень стресса, что провоцирует запуск процесса <q class="main-quotes">самосохранения</q>. В этом случае ЦНС (центральная нервная система) выключает некоторые чувства запуская тем самым определённые нервно-моторные связи в организме человека. Когда во взрослой жизни случаются подобные ситуации ЦНС ведёт себя аналогично. Так наш организм все помнит и ко всему адаптируется. Его найвысшая цель — ВЫЖИТЬ! <a target="_blank" class="main-link" href="https://www.youtube.com/watch?v=s8xRb3wR-Yk&feature=youtu.be">(источник: проф. Сухоруков).</a></p>
+              <p class="main-paragraf">В процессе эмоциональной коррекции мы никогда не убираем первичное чувство, но выводим сознание на тот уровень, где этого чувства нет. И здесь возникает вопрос: <q class="main-quotes">Как?</q>.</p>
+              <p class="main-paragraf">Так вот, для решения данной проблемы существуют акупунктурные точки отвечающие за определённые эмоции. Также применяются провокаторы для обозначения того, где скрывается проблема и <a target="_blank" class="main-link" href="http://www.psychologies.ru/wellbeing/tsvetyi-doktora-baha/">эссенция Баха</a> для выявления чёткой первичной эмоции.</p>
             </div>
-            <h3 class="main-header3">Коррекция первичной эмоции</h3>
-            <p class="main-paragraf">Одним из самых важных факторов влияющих на нас, наше поведение, реакцию на определённые ситуации и, конечно же, на нашу жизнь является эмоциональное состояние. Оно может способствовать улучшению или же ухудшению нашего здоровья. В связи с этим, в жизни каждого человека особенно важен эмоциональный баланс. В случае его нарушения очень важно не забывать о возможных неблагоприятных последствиях и не игнорировать данную проблему.</p>
-            <p class="main-paragraf">Именно здесь нам поможет <a class="main-link" href="https://www.youtube.com/watch?v=C1LoGl_sykk&feature=youtu.be">КОРРЕКЦИЯ ПЕРВИЧНОЙ ЭМОЦИИ</a>.</p>
-            <p class="main-paragraf">Наши эмоции и чувства появляются и зависят от того, как мы относимся к своей реальности. Биология человека такова, что мы не всегда можем сами принимать решения. Это так называемое состояние <q class="main-quotes">понимаю, но ничего не могу с этим сделать</q>, которое знакомо почти каждому из нас. Причиной этому являются наши гормоны глюкокортикоиды, которые отвечают за наше настроение и реакцию на ту или иную провокацию.</p>
-            <p class="main-paragraf">У многих из нас в детстве или в пубертный период (половое созревание) происходили такие серьёзные эмоциональные ситуации как насилие, смерть близкого человека, болезнь, издевательства со стороны окружающих и отсутствие определённо важного внимания родителей. Все это нервная система воспринимает, как высокий уровень стресса, что провоцирует запуск процесса <q class="main-quotes">самосохранения</q>. В этом случае ЦНС (центральная нервная система) выключает некоторые чувства запуская тем самым определённые нервно-моторные связи в организме человека. Когда во взрослой жизни случаются подобные ситуации ЦНС ведёт себя аналогично. Так наш организм все помнит и ко всему адаптируется. Его найвысшая цель — ВЫЖИТЬ! <a class="main-link" href="https://www.youtube.com/watch?v=s8xRb3wR-Yk&feature=youtu.be">(источник: проф. Сухоруков).</a></p>
-            <p class="main-paragraf">В процессе эмоциональной коррекции мы никогда не убираем первичное чувство, но выводим сознание на тот уровень, где этого чувства нет. И здесь возникает вопрос: <q class="main-quotes">Как?</q>.</p>
-            <p class="main-paragraf">Так вот, для решения данной проблемы существуют акупунктурные точки отвечающие за определённые эмоции. Также применяются провокаторы для обозначения того, где скрывается проблема и <a class="main-link" href="http://www.psychologies.ru/wellbeing/tsvetyi-doktora-baha/">эссенция Баха</a> для выявления чёткой первичной эмоции.</p>
-          </div>
-          <div class="services-item">
-            <div class="services-content">
-              <img class="services-content__img" src="img/services/weight-loss-course.png" alt="">
+            <div class="services-item">
+              <div class="services-content">
+                <img class="services-content__img" width="1000" height="1000" src="img/services/weight-loss-course.png" alt="weight loss course">
+              </div>
+              <h3 class="main-header3">Авторский 5-ти дневный курс здорового похудения</h3>
+              <p class="main-paragraf">Первый день — лимфодренажные процедуры на все тело с применением крема на натуральной основе компании Styx, 1 час (выгоняем лишнюю воду, запускаем здоровый процесс обмена веществ в организме, усиливаем питание тканей и движение лимфы).</p>
+              <p class="main-paragraf">Второй день — медовые вышлепывания на все тело плюс крем Styx на основе натуральных компонентов способствующих жиросжиганию 1час (медовый массаж способствует сжиганию жировых отложений и выравниванию всей поверхности, так же действует как пилинг для кожи после чего глубже проникает жиросжигающий крем Styx).</p>
+              <p class="main-paragraf">Третий день — вакумно роликовый массаж на все тело с обертованием на основе водорослей и кофеина (процедура способствует распределению неровностей по поверхности, усилению кровообращения и подтягиванию кожи).</p>
+              <p class="main-paragraf">Четвёртый день — лимфодренажные процедуры на все тело с обертованием на основе крема в состав которой входит спирулина плюс ручной массаж.</p>
+              <p class="main-paragraf">Пятый день — медово-вакумно роликовый массаж и шоколадная антицелюлитная крем-маска на все тело.</p>
             </div>
-            <h3 class="main-header3">Авторский 5-ти дневный курс здорового похудения</h3>
-            <p class="main-paragraf">Первый день — лимфодренажные процедуры на все тело с применением крема на натуральной основе компании Styx, 1 час (выгоняем лишнюю воду, запускаем здоровый процесс обмена веществ в организме, усиливаем питание тканей и движение лимфы).</p>
-            <p class="main-paragraf">Второй день — медовые вышлепывания на все тело плюс крем Styx на основе натуральных компонентов способствующих жиросжиганию 1час (медовый массаж способствует сжиганию жировых отложений и выравниванию всей поверхности, так же действует как пилинг для кожи после чего глубже проникает жиросжигающий крем Styx).</p>
-            <p class="main-paragraf">Третий день — вакумно роликовый массаж на все тело с обертованием на основе водорослей и кофеина (процедура способствует распределению неровностей по поверхности, усилению кровообращения и подтягиванию кожи).</p>
-            <p class="main-paragraf">Четвёртый день — лимфодренажные процедуры на все тело с обертованием на основе крема в состав которой входит спирулина плюс ручной массаж.</p>
-            <p class="main-paragraf">Пятый день — медово-вакумно роликовый массаж и шоколадная антицелюлитная крем-маска на все тело.</p>
-          </div>
-          <div class="services-item">
-            <div class="services-content">
-              <img class="services-content__img" src="img/services/corrective-oval-facial-procedures.png" alt="">
+            <div class="services-item">
+              <div class="services-content">
+                <img class="services-content__img" width="1000" height="1000" src="img/services/corrective-oval-facial-procedures.png" alt="corrective oval facial procedures">
+              </div>
+              <h3 class="main-header3">Лимфатические, корректирующие овал лица процедуры с применением эстетического тестирования</h3>
+              <p class="main-paragraf">Убираем второй подбородок, мешки под глазами, асиметрию, носогубные складки, морщины на лбу и между глаз — это часовая процедура с приминением меда, как лёгкого пилинга и детокса. Мед способствует подтяжке и лифтингу кожи лица и шеи, плюс чистит поры и избавляет от летнего пигмента. Затем идет проработка лимфатических зон шейноворотниковой зоны маслом кокоса или карите, мягкими движениями выводим токсины, прокачиваем застои, убираем подбородок и корректируем овал.</p>
+              <p class="main-paragraf">Дальше применяется эстетическое воздействие внутри рта, в перчатках специальными мягкими движениями выравниваем челюсть и расслабляем околоротовые мышцы для большей упругости и предотвращения носогубных складок.</p>
+              <p class="main-paragraf">После этого наноситься натуральная маска и производиться лимфодренаж лица и шеи определёнными движениями по массажным линиям.</p>
+              <p class="main-paragraf">Как заключение процедуры прорабатываются: фасция головы, уши, плечи и наклетваеться тейп для того что бы мышцы лица запомнили правильное положение.</p>
+              <p class="main-paragraf">В конце вы почувстуете невероятную лёгкость и прилив энергии в теле.</p>
             </div>
-            <h3 class="main-header3">Лимфатические, корректирующие овал лица процедуры с применением эстетического тестирования</h3>
-            <p class="main-paragraf">Убираем второй подбородок, мешки под глазами, асиметрию, носогубные складки, морщины на лбу и между глаз — это часовая процедура с приминением меда, как лёгкого пилинга и детокса. Мед способствует подтяжке и лифтингу кожи лица и шеи, плюс чистит поры и избавляет от летнего пигмента. Затем идет проработка лимфатических зон шейноворотниковой зоны маслом кокоса или карите, мягкими движениями выводим токсины, прокачиваем застои, убираем подбородок и корректируем овал.</p>
-            <p class="main-paragraf">Дальше применяется эстетическое воздействие внутри рта, в перчатках специальными мягкими движениями выравниваем челюсть и расслабляем околоротовые мышцы для большей упругости и предотвращения носогубных складок.</p>
-            <p class="main-paragraf">После этого наноситься натуральная маска и производиться лимфодренаж лица и шеи определёнными движениями по массажным линиям.</p>
-            <p class="main-paragraf">Как заключение процедуры прорабатываются: фасция головы, уши, плечи и наклетваеться тейп для того что бы мышцы лица запомнили правильное положение.</p>
-            <p class="main-paragraf">В конце вы почувстуете невероятную лёгкость и прилив энергии в теле.</p>
           </div>
         </div>
       </div>
-    </div>
 
-    <h1 class="main-header1"># ОБО МНЕ</h1>
-    <div class="background-container">
-      <div class="about-me">
-        <h2 class="main-header2">Немного биографии и то как я пришла в медицину</h2>
-        <p class="main-paragraf">В раннем возрасте мне диагностировали сколиоз 2-й степени. Грудная клетка у меня справа выходила вперёд , а таз постоянно болел. Моё сердце сдвинуто к середине из-за чего было очень тяжело дышать. Мне запретили заниматься спортом, ограничили все физические нагрузки и освободили от летней практики в школе. На протяжении длительного времени меня лечили в самых разных санаториях и реабилитационных центрах Крыма, Славяногорска и Москвы. Но мой отец на все это смотрел иначе. Он хотел, чтобы я занималась спортом, и жила полноценной жизнью. Возил меня на гандбол и всегда говорил: <q class="main-quotes">Oтжимайся</q>. Я была достаточно подтянута с хорошим спортивным телосложением, но не могла отжаться от пола даже 5 раз.</p>
-        <p class="main-paragraf">Училась и закончила самую обычную сельскую школу и, следуя своей мечте, поступила в Национальный Университет имени В. Н. Каразина в Харькове. Училась я на геолого-географическом факультете. На летнюю практику мы ездили в Турцию работать гидами. По истечении обстоятельств меня поставили работать на яхте, где приходилось постоянно активничать, прыгать, танцевать и купаться. В этот момент я поняла, что все переболело, как только я начала стабильно давать правильные и не совсем правильные нагрузки на своё тело. С этого момента я приняла твёрдое решение взять все в свои руки.</p>
-        <p class="main-paragraf">Вернувшись домой я начала бегать по утрам и заниматься на площадке. Подкорректировала своё питание и решила ещё раз поехать в Турцию. Только на этот раз её мне оказалось мало. Дальше мой путь лежал в Тайланд, где я и поняла, как надо питаться и правильно работать над своим телом. Я экспериментировала с питанием и полной разгрузкой организма от еды с помощью литературы Эхтарта Толле, Ошо, Вадима Зеланда. Получив много новых знаний, хотелось больше, что и привело меня в Индию. Там я получила новый опыт испытывая себя в разных жизненных ситуациях.</p>
-        <p class="main-paragraf">Дальше во Вьетнам, там практиковала вегетарианство, сыроедение, голодание по Экадаши и освоила йогу. Изучала книги по эзотерике, что дало мне возможность познать совершенно новые для меня вещи.</p>
-        <p class="main-paragraf">В 2015 году, вернулась в Тайланд, чтобы заниматься непосредственно йогой, которая лечит не только тело, но и душу. На протяжении трёх месяцев я практиковала по 3 тренировки в день. Это был курс <q class="main-quotes">Balaji Yoga</q>. За месяц до поездки по северу Тайланда я ограничила свой дневной рацион тыквой, молоком, рисом, медом и топленым индийским маслом. Практиковала новый для меня распорядок сна, который был обязательным после обеда. Моё сознание и тело было на высочайшем уровне, как мне тогда казалось :)</p>
-        <p class="main-paragraf">Моей следующей <q class="main-quotes">остановкой</q> стал Кипр.</p>
-        <h3 class="main-header3">Некоторые фотографии из моих путешествий:</h3>
-        <div class="about-me-gallery">
-          <div class="about-me-column">
-            <div class="about-me-item">
-              <img class="about-me-column__img" src="img/travels/about-me-travels-1.png" alt="">
+      <h1 class="main-header1"># ОБО МНЕ</h1>
+      <div class="background-container">
+        <div class="about-me">
+          <h2 class="main-header2">Немного биографии и то как я пришла в медицину</h2>
+          <p class="main-paragraf">В раннем возрасте мне диагностировали сколиоз 2-й степени. Грудная клетка у меня справа выходила вперёд , а таз постоянно болел. Моё сердце сдвинуто к середине из-за чего было очень тяжело дышать. Мне запретили заниматься спортом, ограничили все физические нагрузки и освободили от летней практики в школе. На протяжении длительного времени меня лечили в самых разных санаториях и реабилитационных центрах Крыма, Славяногорска и Москвы. Но мой отец на все это смотрел иначе. Он хотел, чтобы я занималась спортом, и жила полноценной жизнью. Возил меня на гандбол и всегда говорил: <q class="main-quotes">Oтжимайся</q>. Я была достаточно подтянута с хорошим спортивным телосложением, но не могла отжаться от пола даже 5 раз.</p>
+          <p class="main-paragraf">Училась и закончила самую обычную сельскую школу и, следуя своей мечте, поступила в Национальный Университет имени В. Н. Каразина в Харькове. Училась я на геолого-географическом факультете. На летнюю практику мы ездили в Турцию работать гидами. По истечении обстоятельств меня поставили работать на яхте, где приходилось постоянно активничать, прыгать, танцевать и купаться. В этот момент я поняла, что все переболело, как только я начала стабильно давать правильные и не совсем правильные нагрузки на своё тело. С этого момента я приняла твёрдое решение взять все в свои руки.</p>
+          <p class="main-paragraf">Вернувшись домой я начала бегать по утрам и заниматься на площадке. Подкорректировала своё питание и решила ещё раз поехать в Турцию. Только на этот раз её мне оказалось мало. Дальше мой путь лежал в Тайланд, где я и поняла, как надо питаться и правильно работать над своим телом. Я экспериментировала с питанием и полной разгрузкой организма от еды с помощью литературы Эхтарта Толле, Ошо, Вадима Зеланда. Получив много новых знаний, хотелось больше, что и привело меня в Индию. Там я получила новый опыт испытывая себя в разных жизненных ситуациях.</p>
+          <p class="main-paragraf">Дальше во Вьетнам, там практиковала вегетарианство, сыроедение, голодание по Экадаши и освоила йогу. Изучала книги по эзотерике, что дало мне возможность познать совершенно новые для меня вещи.</p>
+          <p class="main-paragraf">В 2015 году, вернулась в Тайланд, чтобы заниматься непосредственно йогой, которая лечит не только тело, но и душу. На протяжении трёх месяцев я практиковала по 3 тренировки в день. Это был курс <q class="main-quotes">Balaji Yoga</q>. За месяц до поездки по северу Тайланда я ограничила свой дневной рацион тыквой, молоком, рисом, медом и топленым индийским маслом. Практиковала новый для меня распорядок сна, который был обязательным после обеда. Моё сознание и тело было на высочайшем уровне, как мне тогда казалось :)</p>
+          <p class="main-paragraf">Моей следующей <q class="main-quotes">остановкой</q> стал Кипр.</p>
+          <h3 class="main-header3">Некоторые фотографии из моих путешествий:</h3>
+          <div class="about-me-gallery">
+            <div class="about-me-column">
+              <div class="about-me-item">
+                <img class="about-me-column__img" width="192" height="500" src="img/travels/about-me-travels-1.png" alt="about my travels">
+              </div>
+              <div class="about-me-item">
+                <img class="about-me-column__img" width="192" height="500" src="img/travels/about-me-travels-2.png" alt="about my travels">
+              </div>
+              <div class="about-me-item">
+                <img class="about-me-column__img" width="192" height="500" src="img/travels/about-me-travels-3.png" alt="about my travels">
+              </div>
+              <div class="about-me-item">
+                <img class="about-me-column__img" width="192" height="500" src="img/travels/about-me-travels-4.png" alt="about my travels">
+              </div>
+              <div class="about-me-item">
+                <img class="about-me-column__img" width="192" height="500" src="img/travels/about-me-travels-5.png" alt="about my travels">
+              </div>
+              <div class="about-me-item">
+                <img class="about-me-column__img" width="192" height="500" src="img/travels/about-me-travels-6.png" alt="about my travels">
+              </div>
             </div>
-            <div class="about-me-item">
-              <img class="about-me-column__img" src="img/travels/about-me-travels-2.png" alt="">
+            <div class="about-me-column">
+              <div class="about-me-item">
+                <img class="about-me-column__img" width="192" height="500" src="img/travels/about-me-travels-7.png" alt="about my travels">
+              </div>
+              <div class="about-me-item">
+                <img class="about-me-column__img" width="192" height="500" src="img/travels/about-me-travels-8.png" alt="about my travels">
+              </div>
+              <div class="about-me-item">
+                <img class="about-me-column__img" width="192" height="500" src="img/travels/about-me-travels-9.png" alt="about my travels">
+              </div>
+              <div class="about-me-item">
+                <img class="about-me-column__img" width="192" height="500" src="img/travels/about-me-travels-10.png" alt="about my travels">
+              </div>
+              <div class="about-me-item">
+                <img class="about-me-column__img" width="192" height="500" src="img/travels/about-me-travels-11.png" alt="about my travels">
+              </div>
+              <div class="about-me-item">
+                <img class="about-me-column__img" width="192" height="500" src="img/travels/about-me-travels-12.png" alt="about my travels">
+              </div>
             </div>
-            <div class="about-me-item">
-              <img class="about-me-column__img" src="img/travels/about-me-travels-3.png" alt="">
+            <div class="about-me-column">
+              <div class="about-me-item">
+                <img class="about-me-column__img" width="192" height="500" src="img/travels/about-me-travels-13.png" alt="about my travels">
+              </div>
+              <div class="about-me-item">
+                <img class="about-me-column__img" width="192" height="500" src="img/travels/about-me-travels-14.png" alt="about my travels">
+              </div>
+              <div class="about-me-item">
+                <img class="about-me-column__img" width="192" height="500" src="img/travels/about-me-travels-15.png" alt="about my travels">
+              </div>
+              <div class="about-me-item">
+                <img class="about-me-column__img" width="192" height="500" src="img/travels/about-me-travels-16.png" alt="about my travels">
+              </div>
+              <div class="about-me-item">
+                <img class="about-me-column__img" width="192" height="500" src="img/travels/about-me-travels-17.png" alt="about my travels">
+              </div>
+              <div class="about-me-item">
+                <img class="about-me-column__img" width="192" height="500" src="img/travels/about-me-travels-18.png" alt="about my travels">
+              </div>
             </div>
-            <div class="about-me-item">
-              <img class="about-me-column__img" src="img/travels/about-me-travels-4.png" alt="">
+            <div class="about-me-column display-none-576-flex">
+              <div class="about-me-item">
+                <img class="about-me-column__img" width="192" height="500" src="img/travels/about-me-travels-19.png" alt="about my travels">
+              </div>
+              <div class="about-me-item">
+                <img class="about-me-column__img" width="192" height="500" src="img/travels/about-me-travels-20.png" alt="about my travels">
+              </div>
+              <div class="about-me-item">
+                <img class="about-me-column__img" width="192" height="500" src="img/travels/about-me-travels-21.png" alt="about my travels">
+              </div>
+              <div class="about-me-item">
+                <img class="about-me-column__img" width="192" height="500" src="img/travels/about-me-travels-22.png" alt="about my travels">
+              </div>
+              <div class="about-me-item">
+                <img class="about-me-column__img" width="192" height="500" src="img/travels/about-me-travels-23.png" alt="about my travels">
+              </div>
+              <div class="about-me-item">
+                <img class="about-me-column__img" width="192" height="500" src="img/travels/about-me-travels-24.png" alt="about my travels">
+              </div>
             </div>
-            <div class="about-me-item">
-              <img class="about-me-column__img" src="img/travels/about-me-travels-5.png" alt="">
+            <div class="about-me-column display-none-576-flex">
+              <div class="about-me-item">
+                <img class="about-me-column__img" width="192" height="500" src="img/travels/about-me-travels-25.png" alt="about my travels">
+              </div>
+              <div class="about-me-item">
+                <img class="about-me-column__img" width="192" height="500" src="img/travels/about-me-travels-26.png" alt="about my travels">
+              </div>
+              <div class="about-me-item">
+                <img class="about-me-column__img" width="192" height="500" src="img/travels/about-me-travels-27.png" alt="about my travels">
+              </div>
+              <div class="about-me-item">
+                <img class="about-me-column__img" width="192" height="500" src="img/travels/about-me-travels-28.png" alt="about my travels">
+              </div>
+              <div class="about-me-item">
+                <img class="about-me-column__img" width="192" height="500" src="img/travels/about-me-travels-29.png" alt="about my travels">
+              </div>
+              <div class="about-me-item">
+                <img class="about-me-column__img" width="192" height="500" src="img/travels/about-me-travels-30.png" alt="about my travels">
+              </div>
             </div>
-            <div class="about-me-item">
-              <img class="about-me-column__img" src="img/travels/about-me-travels-6.png" alt="">
+            <div class="about-me-column display-none-576-flex">
+              <div class="about-me-item">
+                <img class="about-me-column__img" width="192" height="500" src="img/travels/about-me-travels-31.png" alt="about my travels">
+              </div>
+              <div class="about-me-item">
+                <img class="about-me-column__img" width="192" height="500" src="img/travels/about-me-travels-32.png" alt="about my travels">
+              </div>
+              <div class="about-me-item">
+                <img class="about-me-column__img" width="192" height="500" src="img/travels/about-me-travels-33.png" alt="about my travels">
+              </div>
+              <div class="about-me-item">
+                <img class="about-me-column__img" width="192" height="500" src="img/travels/about-me-travels-34.png" alt="about my travels">
+              </div>
+              <div class="about-me-item">
+                <img class="about-me-column__img" width="192" height="500" src="img/travels/about-me-travels-35.png" alt="about my travels">
+              </div>
+              <div class="about-me-item">
+                <img class="about-me-column__img" width="192" height="500" src="img/travels/about-me-travels-36.png" alt="about my travels">
+              </div>
+            </div>
+            <div class="about-me-column display-none-768-flex">
+              <div class="about-me-item">
+                <img class="about-me-column__img" width="192" height="500" src="img/travels/about-me-travels-37.png" alt="about my travels">
+              </div>
+              <div class="about-me-item">
+                <img class="about-me-column__img" width="192" height="500" src="img/travels/about-me-travels-38.png" alt="about my travels">
+              </div>
+              <div class="about-me-item">
+                <img class="about-me-column__img" width="192" height="500" src="img/travels/about-me-travels-39.png" alt="about my travels">
+              </div>
+              <div class="about-me-item">
+                <img class="about-me-column__img" width="192" height="500" src="img/travels/about-me-travels-40.png" alt="about my travels">
+              </div>
+              <div class="about-me-item">
+                <img class="about-me-column__img" width="192" height="500" src="img/travels/about-me-travels-41.png" alt="about my travels">
+              </div>
+              <div class="about-me-item">
+                <img class="about-me-column__img" width="192" height="500" src="img/travels/about-me-travels-42.png" alt="about my travels">
+              </div>
+            </div>
+            <div class="about-me-column display-none-768-flex">
+              <div class="about-me-item">
+                <img class="about-me-column__img" width="192" height="500" src="img/travels/about-me-travels-43.png" alt="about my travels">
+              </div>
+              <div class="about-me-item">
+                <img class="about-me-column__img" width="192" height="500" src="img/travels/about-me-travels-44.png" alt="about my travels">
+              </div>
+              <div class="about-me-item">
+                <img class="about-me-column__img" width="192" height="500" src="img/travels/about-me-travels-45.png" alt="about my travels">
+              </div>
+              <div class="about-me-item">
+                <img class="about-me-column__img" width="192" height="500" src="img/travels/about-me-travels-46.png" alt="about my travels">
+              </div>
+              <div class="about-me-item">
+                <img class="about-me-column__img" width="192" height="500" src="img/travels/about-me-travels-47.png" alt="about my travels">
+              </div>
+              <div class="about-me-item">
+                <img class="about-me-column__img" width="192" height="500" src="img/travels/about-me-travels-48.png" alt="about my travels">
+              </div>
+            </div>
+            <div class="about-me-column display-none-768-flex">
+              <div class="about-me-item">
+                <img class="about-me-column__img" width="192" height="500" src="img/travels/about-me-travels-49.png" alt="about my travels">
+              </div>
+              <div class="about-me-item">
+                <img class="about-me-column__img" width="192" height="500" src="img/travels/about-me-travels-50.png" alt="about my travels">
+              </div>
+              <div class="about-me-item">
+                <img class="about-me-column__img" width="192" height="500" src="img/travels/about-me-travels-51.png" alt="about my travels">
+              </div>
+              <div class="about-me-item">
+                <img class="about-me-column__img" width="192" height="500" src="img/travels/about-me-travels-52.png" alt="about my travels">
+              </div>
+              <div class="about-me-item">
+                <img class="about-me-column__img" width="192" height="500" src="img/travels/about-me-travels-53.png" alt="about my travels">
+              </div>
+              <div class="about-me-item">
+                <img class="about-me-column__img" width="192" height="500" src="img/travels/about-me-travels-54.png" alt="about my travels">
+              </div>
+            </div>
+            <div class="about-me-column display-none-992-flex">
+              <div class="about-me-item">
+                <img class="about-me-column__img" width="192" height="500" src="img/travels/about-me-travels-55.png" alt="about my travels">
+              </div>
+              <div class="about-me-item">
+                <img class="about-me-column__img" width="192" height="500" src="img/travels/about-me-travels-56.png" alt="about my travels">
+              </div>
+              <div class="about-me-item">
+                <img class="about-me-column__img" width="192" height="500" src="img/travels/about-me-travels-57.png" alt="about my travels">
+              </div>
+              <div class="about-me-item">
+                <img class="about-me-column__img" width="192" height="500" src="img/travels/about-me-travels-58.png" alt="about my travels">
+              </div>
+              <div class="about-me-item">
+                <img class="about-me-column__img" width="192" height="500" src="img/travels/about-me-travels-59.png" alt="about my travels">
+              </div>
+              <div class="about-me-item">
+                <img class="about-me-column__img" width="192" height="500" src="img/travels/about-me-travels-60.png" alt="about my travels">
+              </div>
+            </div>
+            <div class="about-me-column display-none-992-flex">
+              <div class="about-me-item">
+                <img class="about-me-column__img" width="192" height="500" src="img/travels/about-me-travels-61.png" alt="about my travels">
+              </div>
+              <div class="about-me-item">
+                <img class="about-me-column__img" width="192" height="500" src="img/travels/about-me-travels-62.png" alt="about my travels">
+              </div>
+              <div class="about-me-item">
+                <img class="about-me-column__img" width="192" height="500" src="img/travels/about-me-travels-63.png" alt="about my travels">
+              </div>
+              <div class="about-me-item">
+                <img class="about-me-column__img" width="192" height="500" src="img/travels/about-me-travels-64.png" alt="about my travels">
+              </div>
+              <div class="about-me-item">
+                <img class="about-me-column__img" width="192" height="500" src="img/travels/about-me-travels-65.png" alt="about my travels">
+              </div>
+              <div class="about-me-item">
+                <img class="about-me-column__img" width="192" height="500" src="img/travels/about-me-travels-66.png" alt="about my travels">
+              </div>
+            </div>
+            <div class="about-me-column display-none-992-flex">
+              <div class="about-me-item">
+                <img class="about-me-column__img" width="192" height="500" src="img/travels/about-me-travels-67.png" alt="about my travels">
+              </div>
+              <div class="about-me-item">
+                <img class="about-me-column__img" width="192" height="500" src="img/travels/about-me-travels-68.png" alt="about my travels">
+              </div>
+              <div class="about-me-item">
+                <img class="about-me-column__img" width="192" height="500" src="img/travels/about-me-travels-69.png" alt="about my travels">
+              </div>
+              <div class="about-me-item">
+                <img class="about-me-column__img" width="192" height="500" src="img/travels/about-me-travels-70.png" alt="about my travels">
+              </div>
+              <div class="about-me-item">
+                <img class="about-me-column__img" width="192" height="500" src="img/travels/about-me-travels-71.png" alt="about my travels">
+              </div>
+              <div class="about-me-item">
+                <img class="about-me-column__img" width="192" height="500" src="img/travels/about-me-travels-72.png" alt="about my travels">
+              </div>
             </div>
           </div>
-          <div class="about-me-column">
-            <div class="about-me-item">
-              <img class="about-me-column__img" src="img/travels/about-me-travels-7.png" alt="">
+          <p class="main-paragraf">Зимой 2016 после лета на Кипре, поехала учиться в Челябинск. Там я провела 3 месяца, на протяжении которых посещала курсы по изучению Прикладной Эстетики Человека и параллельно работала в <a target="_blank" class="main-link" href="https://newtibet.ru/">реабилитационном центре <q class="main-quotes">Новый Тибет</q></a>. Вернувшись на Кипр я открыла практику и начала принимать своих пациентов. Длительная отработка навыков массажа по разным техникам, корректирующих процедур для тела и лица, медовых процедур для мышц и связок, дала мне хорошую базу, которую я смогла применить для помощи многим людям.</p>
+          <p class="main-paragraf">Весь мой путь и все, что я осознала привело меня к тому, что мне захотелось вернуться домой и делать все это здесь, помогая тем, кому это необходимо!</p>
+          <p class="main-paragraf">Вернувшись в 2016 году я не смогла остановиться в поиске и изучении новой информации и прошла обучение в Ассоциации Прикладной Кинезиологии им. Васильевой Людмилы Фёдоровны и в 2017 году получила диплом Прикладного Кинезиолога в Одессе. После чего прошла массу курсов от <a target="_blank" class="main-link" href="https://ua-pk.com">УАПК (Украинской Асоциации Прикладной Кинезиологии)</a>.</p>
+          <p class="main-paragraf">С помощью <a target="_blank" class="main-link" href="https://breus.live/">курса личностного роста от Татьяны Бреус</a> мы с командой сделали в Киеве <a target="_blank" class="main-link" href="https://xn--b1ajuq0cb.xn--j1amh/lybid-7-0/">социальный проект <q class="main-quotes">Lybid 7.0</q></a> — это небольшой сквер, направленный на улучшение благоустройства около одноимённой реки. Также, прошла всю <a target="_blank" class="main-link" href="https://fazarosta.com">программу компании <q class="main-quotes">Фаза Роста</q></a> — высшее женское образование с лучшими психологами Украины, более того, проходила <a target="_blank" class="main-link" href="http://grabova.pro/">обучение у сексолога Светланы Грабовой</a>. В 2018 году прошла обучение базовому курсу йоги в Киеве при школе<q class="main-quotes">Олимпия</q>. В 2019 году прошла семинар от <a target="_blank" class="main-link" href="https://www.ifdmo.com/ru/">IFDMO (International Fascial Distortion Model Organization)</a>.</p>
+          <p class="main-paragraf">В 2018 году проводила бесплатные диагностики на <a target="_blank" class="main-link" href="https://sko4.com/places/skvorechnik">эко пространстве <q class="main-quotes">Скворечник</q></a> и провожу бесплатные уроки йоги.</p>
+          <h3 class="main-header3">Несколько фотографий из моих занятий йогой:</h3>
+          <div class="about-me-gallery">
+            <div class="about-me-column">
+              <div class="about-me-item">
+                <img class="about-me-column__img" src="img/yoga/about-me-yoga-1.png" alt="about my yoga">
+              </div>
+              <div class="about-me-item">
+                <img class="about-me-column__img" src="img/yoga/about-me-yoga-2.png" alt="about my yoga">
+              </div>
             </div>
-            <div class="about-me-item">
-              <img class="about-me-column__img" src="img/travels/about-me-travels-8.png" alt="">
+            <div class="about-me-column">
+              <div class="about-me-item">
+                <img class="about-me-column__img" src="img/yoga/about-me-yoga-3.png" alt="about my yoga">
+              </div>
+              <div class="about-me-item">
+                <img class="about-me-column__img" src="img/yoga/about-me-yoga-4.png" alt="about my yoga">
+              </div>
             </div>
-            <div class="about-me-item">
-              <img class="about-me-column__img" src="img/travels/about-me-travels-9.png" alt="">
+            <div class="about-me-column">
+              <div class="about-me-item">
+                <img class="about-me-column__img" src="img/yoga/about-me-yoga-5.png" alt="about my yoga">
+              </div>
+              <div class="about-me-item">
+                <img class="about-me-column__img" src="img/yoga/about-me-yoga-6.png" alt="about my yoga">
+              </div>
             </div>
-            <div class="about-me-item">
-              <img class="about-me-column__img" src="img/travels/about-me-travels-10.png" alt="">
+            <div class="about-me-column display-none-576-flex">
+              <div class="about-me-item">
+                <img class="about-me-column__img" src="img/yoga/about-me-yoga-7.png" alt="about my yoga">
+              </div>
+              <div class="about-me-item">
+                <img class="about-me-column__img" src="img/yoga/about-me-yoga-8.png" alt="about my yoga">
+              </div>
             </div>
-            <div class="about-me-item">
-              <img class="about-me-column__img" src="img/travels/about-me-travels-11.png" alt="">
+            <div class="about-me-column display-none-576-flex">
+              <div class="about-me-item">
+                <img class="about-me-column__img" src="img/yoga/about-me-yoga-9.png" alt="about my yoga">
+              </div>
+              <div class="about-me-item">
+                <img class="about-me-column__img" src="img/yoga/about-me-yoga-10.png" alt="about my yoga">
+              </div>
             </div>
-            <div class="about-me-item">
-              <img class="about-me-column__img" src="img/travels/about-me-travels-12.png" alt="">
+            <div class="about-me-column display-none-576-flex">
+              <div class="about-me-item">
+                <img class="about-me-column__img" src="img/yoga/about-me-yoga-11.png" alt="about my yoga">
+              </div>
+              <div class="about-me-item">
+                <img class="about-me-column__img" src="img/yoga/about-me-yoga-12.png" alt="about my yoga">
+              </div>
             </div>
-          </div>
-          <div class="about-me-column">
-            <div class="about-me-item">
-              <img class="about-me-column__img" src="img/travels/about-me-travels-13.png" alt="">
+            <div class="about-me-column display-none-768-flex">
+              <div class="about-me-item">
+                <img class="about-me-column__img" src="img/yoga/about-me-yoga-13.png" alt="about my yoga">
+              </div>
+              <div class="about-me-item">
+                <img class="about-me-column__img" src="img/yoga/about-me-yoga-14.png" alt="about my yoga">
+              </div>
             </div>
-            <div class="about-me-item">
-              <img class="about-me-column__img" src="img/travels/about-me-travels-14.png" alt="">
+            <div class="about-me-column display-none-768-flex">
+              <div class="about-me-item">
+                <img class="about-me-column__img" src="img/yoga/about-me-yoga-15.png" alt="about my yoga">
+              </div>
+              <div class="about-me-item">
+                <img class="about-me-column__img" src="img/yoga/about-me-yoga-16.png" alt="about my yoga">
+              </div>
             </div>
-            <div class="about-me-item">
-              <img class="about-me-column__img" src="img/travels/about-me-travels-15.png" alt="">
+            <div class="about-me-column display-none-768-flex">
+              <div class="about-me-item">
+                <img class="about-me-column__img" src="img/yoga/about-me-yoga-17.png" alt="about my yoga">
+              </div>
+              <div class="about-me-item">
+                <img class="about-me-column__img" src="img/yoga/about-me-yoga-18.png" alt="about my yoga">
+              </div>
             </div>
-            <div class="about-me-item">
-              <img class="about-me-column__img" src="img/travels/about-me-travels-16.png" alt="">
+            <div class="about-me-column display-none-992-flex">
+              <div class="about-me-item">
+                <img class="about-me-column__img" src="img/yoga/about-me-yoga-19.png" alt="about my yoga">
+              </div>
+              <div class="about-me-item">
+                <img class="about-me-column__img" src="img/yoga/about-me-yoga-20.png" alt="about my yoga">
+              </div>
             </div>
-            <div class="about-me-item">
-              <img class="about-me-column__img" src="img/travels/about-me-travels-17.png" alt="">
+            <div class="about-me-column display-none-992-flex">
+              <div class="about-me-item">
+                <img class="about-me-column__img" src="img/yoga/about-me-yoga-21.png" alt="about my yoga">
+              </div>
+              <div class="about-me-item">
+                <img class="about-me-column__img" src="img/yoga/about-me-yoga-22.png" alt="about my yoga">
+              </div>
             </div>
-            <div class="about-me-item">
-              <img class="about-me-column__img" src="img/travels/about-me-travels-18.png" alt="">
-            </div>
-          </div>
-          <div class="about-me-column display-none-576-flex">
-            <div class="about-me-item">
-              <img class="about-me-column__img" src="img/travels/about-me-travels-19.png" alt="">
-            </div>
-            <div class="about-me-item">
-              <img class="about-me-column__img" src="img/travels/about-me-travels-20.png" alt="">
-            </div>
-            <div class="about-me-item">
-              <img class="about-me-column__img" src="img/travels/about-me-travels-21.png" alt="">
-            </div>
-            <div class="about-me-item">
-              <img class="about-me-column__img" src="img/travels/about-me-travels-22.png" alt="">
-            </div>
-            <div class="about-me-item">
-              <img class="about-me-column__img" src="img/travels/about-me-travels-23.png" alt="">
-            </div>
-            <div class="about-me-item">
-              <img class="about-me-column__img" src="img/travels/about-me-travels-24.png" alt="">
-            </div>
-          </div>
-          <div class="about-me-column display-none-576-flex">
-            <div class="about-me-item">
-              <img class="about-me-column__img" src="img/travels/about-me-travels-25.png" alt="">
-            </div>
-            <div class="about-me-item">
-              <img class="about-me-column__img" src="img/travels/about-me-travels-26.png" alt="">
-            </div>
-            <div class="about-me-item">
-              <img class="about-me-column__img" src="img/travels/about-me-travels-27.png" alt="">
-            </div>
-            <div class="about-me-item">
-              <img class="about-me-column__img" src="img/travels/about-me-travels-28.png" alt="">
-            </div>
-            <div class="about-me-item">
-              <img class="about-me-column__img" src="img/travels/about-me-travels-29.png" alt="">
-            </div>
-            <div class="about-me-item">
-              <img class="about-me-column__img" src="img/travels/about-me-travels-30.png" alt="">
-            </div>
-          </div>
-          <div class="about-me-column display-none-576-flex">
-            <div class="about-me-item">
-              <img class="about-me-column__img" src="img/travels/about-me-travels-31.png" alt="">
-            </div>
-            <div class="about-me-item">
-              <img class="about-me-column__img" src="img/travels/about-me-travels-32.png" alt="">
-            </div>
-            <div class="about-me-item">
-              <img class="about-me-column__img" src="img/travels/about-me-travels-33.png" alt="">
-            </div>
-            <div class="about-me-item">
-              <img class="about-me-column__img" src="img/travels/about-me-travels-34.png" alt="">
-            </div>
-            <div class="about-me-item">
-              <img class="about-me-column__img" src="img/travels/about-me-travels-35.png" alt="">
-            </div>
-            <div class="about-me-item">
-              <img class="about-me-column__img" src="img/travels/about-me-travels-36.png" alt="">
-            </div>
-          </div>
-          <div class="about-me-column display-none-768-flex">
-            <div class="about-me-item">
-              <img class="about-me-column__img" src="img/travels/about-me-travels-37.png" alt="">
-            </div>
-            <div class="about-me-item">
-              <img class="about-me-column__img" src="img/travels/about-me-travels-38.png" alt="">
-            </div>
-            <div class="about-me-item">
-              <img class="about-me-column__img" src="img/travels/about-me-travels-39.png" alt="">
-            </div>
-            <div class="about-me-item">
-              <img class="about-me-column__img" src="img/travels/about-me-travels-40.png" alt="">
-            </div>
-            <div class="about-me-item">
-              <img class="about-me-column__img" src="img/travels/about-me-travels-41.png" alt="">
-            </div>
-            <div class="about-me-item">
-              <img class="about-me-column__img" src="img/travels/about-me-travels-42.png" alt="">
+            <div class="about-me-column display-none-992-flex">
+              <div class="about-me-item">
+                <img class="about-me-column__img" src="img/yoga/about-me-yoga-23.png" alt="about my yoga">
+              </div>
+              <div class="about-me-item">
+                <img class="about-me-column__img" src="img/yoga/about-me-yoga-24.png" alt="about my yoga">
+              </div>
             </div>
           </div>
-          <div class="about-me-column display-none-768-flex">
-            <div class="about-me-item">
-              <img class="about-me-column__img" src="img/travels/about-me-travels-43.png" alt="">
-            </div>
-            <div class="about-me-item">
-              <img class="about-me-column__img" src="img/travels/about-me-travels-44.png" alt="">
-            </div>
-            <div class="about-me-item">
-              <img class="about-me-column__img" src="img/travels/about-me-travels-45.png" alt="">
-            </div>
-            <div class="about-me-item">
-              <img class="about-me-column__img" src="img/travels/about-me-travels-46.png" alt="">
-            </div>
-            <div class="about-me-item">
-              <img class="about-me-column__img" src="img/travels/about-me-travels-47.png" alt="">
-            </div>
-            <div class="about-me-item">
-              <img class="about-me-column__img" src="img/travels/about-me-travels-48.png" alt="">
-            </div>
-          </div>
-          <div class="about-me-column display-none-768-flex">
-            <div class="about-me-item">
-              <img class="about-me-column__img" src="img/travels/about-me-travels-49.png" alt="">
-            </div>
-            <div class="about-me-item">
-              <img class="about-me-column__img" src="img/travels/about-me-travels-50.png" alt="">
-            </div>
-            <div class="about-me-item">
-              <img class="about-me-column__img" src="img/travels/about-me-travels-51.png" alt="">
-            </div>
-            <div class="about-me-item">
-              <img class="about-me-column__img" src="img/travels/about-me-travels-52.png" alt="">
-            </div>
-            <div class="about-me-item">
-              <img class="about-me-column__img" src="img/travels/about-me-travels-53.png" alt="">
-            </div>
-            <div class="about-me-item">
-              <img class="about-me-column__img" src="img/travels/about-me-travels-54.png" alt="">
-            </div>
-          </div>
-          <div class="about-me-column display-none-992-flex">
-            <div class="about-me-item">
-              <img class="about-me-column__img" src="img/travels/about-me-travels-55.png" alt="">
-            </div>
-            <div class="about-me-item">
-              <img class="about-me-column__img" src="img/travels/about-me-travels-56.png" alt="">
-            </div>
-            <div class="about-me-item">
-              <img class="about-me-column__img" src="img/travels/about-me-travels-57.png" alt="">
-            </div>
-            <div class="about-me-item">
-              <img class="about-me-column__img" src="img/travels/about-me-travels-58.png" alt="">
-            </div>
-            <div class="about-me-item">
-              <img class="about-me-column__img" src="img/travels/about-me-travels-59.png" alt="">
-            </div>
-            <div class="about-me-item">
-              <img class="about-me-column__img" src="img/travels/about-me-travels-60.png" alt="">
-            </div>
-          </div>
-          <div class="about-me-column display-none-992-flex">
-            <div class="about-me-item">
-              <img class="about-me-column__img" src="img/travels/about-me-travels-61.png" alt="">
-            </div>
-            <div class="about-me-item">
-              <img class="about-me-column__img" src="img/travels/about-me-travels-62.png" alt="">
-            </div>
-            <div class="about-me-item">
-              <img class="about-me-column__img" src="img/travels/about-me-travels-63.png" alt="">
-            </div>
-            <div class="about-me-item">
-              <img class="about-me-column__img" src="img/travels/about-me-travels-64.png" alt="">
-            </div>
-            <div class="about-me-item">
-              <img class="about-me-column__img" src="img/travels/about-me-travels-65.png" alt="">
-            </div>
-            <div class="about-me-item">
-              <img class="about-me-column__img" src="img/travels/about-me-travels-66.png" alt="">
-            </div>
-          </div>
-          <div class="about-me-column display-none-992-flex">
-            <div class="about-me-item">
-              <img class="about-me-column__img" src="img/travels/about-me-travels-67.png" alt="">
-            </div>
-            <div class="about-me-item">
-              <img class="about-me-column__img" src="img/travels/about-me-travels-68.png" alt="">
-            </div>
-            <div class="about-me-item">
-              <img class="about-me-column__img" src="img/travels/about-me-travels-69.png" alt="">
-            </div>
-            <div class="about-me-item">
-              <img class="about-me-column__img" src="img/travels/about-me-travels-70.png" alt="">
-            </div>
-            <div class="about-me-item">
-              <img class="about-me-column__img" src="img/travels/about-me-travels-71.png" alt="">
-            </div>
-            <div class="about-me-item">
-              <img class="about-me-column__img" src="img/travels/about-me-travels-72.png" alt="">
-            </div>
-          </div>
+          <p class="main-paragraf">С момента моего возвращения домой, я постоянно участвую в социальной жизни города, посещаю марафоны <a target="_blank" class="main-link" href="https://www.prostir.ua/?organization=hromadska-orhanizatsiya-dilovi-ukrajinski-zhinky">общественной организации <q class="main-quotes">Ділові Українські Жінки</q></a>, нетворкинги от New Comunication и тд.</p>
+          <p class="main-paragraf">Продолжаю путешествовать, на моем счету уже 17 стран. Во Франции, Париж — я так же принимаю раз в месяц по 5 дней для того что бы продвигать холистический подход и в других странах!</p>
+          <p class="main-paragraf">Сегодня я специалист в области прикладной кинезиологии и эстетики тела человека, приглашаю в свой центр всех тех, кто желает улучшить своё здоровье, тело, душу и изменить свою жизнь!</p>
         </div>
-        <p class="main-paragraf">Зимой 2016 после лета на Кипре, поехала учиться в Челябинск. Там я провела 3 месяца, на протяжении которых посещала курсы по изучению Прикладной Эстетики Человека и параллельно работала в <a class="main-link" href="https://newtibet.ru/">реабилитационном центре <q class="main-quotes">Новый Тибет</q></a>. Вернувшись на Кипр я открыла практику и начала принимать своих пациентов. Длительная отработка навыков массажа по разным техникам, корректирующих процедур для тела и лица, медовых процедур для мышц и связок, дала мне хорошую базу, которую я смогла применить для помощи многим людям.</p>
-        <p class="main-paragraf">Весь мой путь и все, что я осознала привело меня к тому, что мне захотелось вернуться домой и делать все это здесь, помогая тем, кому это необходимо!</p>
-        <p class="main-paragraf">Вернувшись в 2016 году я не смогла остановиться в поиске и изучении новой информации и прошла обучение в Ассоциации Прикладной Кинезиологии им. Васильевой Людмилы Фёдоровны и в 2017 году получила диплом Прикладного Кинезиолога в Одессе. После чего прошла массу курсов от <a class="main-link" href="https://ua-pk.com">УАПК (Украинской Асоциации Прикладной Кинезиологии)</a>.</p>
-        <p class="main-paragraf">С помощью <a class="main-link" href="https://breus.live/">курса личностного роста от Татьяны Бреус</a> мы с командой сделали в Киеве <a class="main-link" href="https://xn--b1ajuq0cb.xn--j1amh/lybid-7-0/">социальный проект <q class="main-quotes">Lybid 7.0</q></a> — это небольшой сквер, направленный на улучшение благоустройства около одноимённой реки. Также, прошла всю <a class="main-link" href="https://fazarosta.com">программу компании <q class="main-quotes">Фаза Роста</q></a> — высшее женское образование с лучшими психологами Украины, более того, проходила <a class="main-link" href="http://grabova.pro/">обучение у сексолога Светланы Грабовой</a>. В 2018 году прошла обучение базовому курсу йоги в Киеве при школе<q class="main-quotes">Олимпия</q>. В 2019 году прошла семинар от <a class="main-link" href="https://www.ifdmo.com/ru/">IFDMO (International Fascial Distortion Model Organization)</a>.</p>
-        <p class="main-paragraf">В 2018 году проводила бесплатные диагностики на <a class="main-link" href="https://sko4.com/places/skvorechnik">эко пространстве <q class="main-quotes">Скворечник</q></a> и провожу бесплатные уроки йоги.</p>
-        <h3 class="main-header3">Несколько фотографий из моих занятий йогой:</h3>
-        <div class="about-me-gallery">
-          <div class="about-me-column">
-            <div class="about-me-item">
-              <img class="about-me-column__img" src="img/yoga/about-me-yoga-1.png" alt="">
-            </div>
-            <div class="about-me-item">
-              <img class="about-me-column__img" src="img/yoga/about-me-yoga-2.png" alt="">
-            </div>
-          </div>
-          <div class="about-me-column">
-            <div class="about-me-item">
-              <img class="about-me-column__img" src="img/yoga/about-me-yoga-3.png" alt="">
-            </div>
-            <div class="about-me-item">
-              <img class="about-me-column__img" src="img/yoga/about-me-yoga-4.png" alt="">
-            </div>
-          </div>
-          <div class="about-me-column">
-            <div class="about-me-item">
-              <img class="about-me-column__img" src="img/yoga/about-me-yoga-5.png" alt="">
-            </div>
-            <div class="about-me-item">
-              <img class="about-me-column__img" src="img/yoga/about-me-yoga-6.png" alt="">
-            </div>
-          </div>
-          <div class="about-me-column display-none-576-flex">
-            <div class="about-me-item">
-              <img class="about-me-column__img" src="img/yoga/about-me-yoga-7.png" alt="">
-            </div>
-            <div class="about-me-item">
-              <img class="about-me-column__img" src="img/yoga/about-me-yoga-8.png" alt="">
-            </div>
-          </div>
-          <div class="about-me-column display-none-576-flex">
-            <div class="about-me-item">
-              <img class="about-me-column__img" src="img/yoga/about-me-yoga-9.png" alt="">
-            </div>
-            <div class="about-me-item">
-              <img class="about-me-column__img" src="img/yoga/about-me-yoga-10.png" alt="">
-            </div>
-          </div>
-          <div class="about-me-column display-none-576-flex">
-            <div class="about-me-item">
-              <img class="about-me-column__img" src="img/yoga/about-me-yoga-11.png" alt="">
-            </div>
-            <div class="about-me-item">
-              <img class="about-me-column__img" src="img/yoga/about-me-yoga-12.png" alt="">
-            </div>
-          </div>
-          <div class="about-me-column display-none-768-flex">
-            <div class="about-me-item">
-              <img class="about-me-column__img" src="img/yoga/about-me-yoga-13.png" alt="">
-            </div>
-            <div class="about-me-item">
-              <img class="about-me-column__img" src="img/yoga/about-me-yoga-14.png" alt="">
-            </div>
-          </div>
-          <div class="about-me-column display-none-768-flex">
-            <div class="about-me-item">
-              <img class="about-me-column__img" src="img/yoga/about-me-yoga-15.png" alt="">
-            </div>
-            <div class="about-me-item">
-              <img class="about-me-column__img" src="img/yoga/about-me-yoga-16.png" alt="">
-            </div>
-          </div>
-          <div class="about-me-column display-none-768-flex">
-            <div class="about-me-item">
-              <img class="about-me-column__img" src="img/yoga/about-me-yoga-17.png" alt="">
-            </div>
-            <div class="about-me-item">
-              <img class="about-me-column__img" src="img/yoga/about-me-yoga-18.png" alt="">
-            </div>
-          </div>
-          <div class="about-me-column display-none-992-flex">
-            <div class="about-me-item">
-              <img class="about-me-column__img" src="img/yoga/about-me-yoga-19.png" alt="">
-            </div>
-            <div class="about-me-item">
-              <img class="about-me-column__img" src="img/yoga/about-me-yoga-20.png" alt="">
-            </div>
-          </div>
-          <div class="about-me-column display-none-992-flex">
-            <div class="about-me-item">
-              <img class="about-me-column__img" src="img/yoga/about-me-yoga-21.png" alt="">
-            </div>
-            <div class="about-me-item">
-              <img class="about-me-column__img" src="img/yoga/about-me-yoga-22.png" alt="">
-            </div>
-          </div>
-          <div class="about-me-column display-none-992-flex">
-            <div class="about-me-item">
-              <img class="about-me-column__img" src="img/yoga/about-me-yoga-23.png" alt="">
-            </div>
-            <div class="about-me-item">
-              <img class="about-me-column__img" src="img/yoga/about-me-yoga-24.png" alt="">
-            </div>
-          </div>
-        </div>
-        <p class="main-paragraf">С момента моего возвращения домой, я постоянно участвую в социальной жизни города, посещаю марафоны <a class="main-link" href="https://www.prostir.ua/?organization=hromadska-orhanizatsiya-dilovi-ukrajinski-zhinky">общественной организации <q class="main-quotes">Ділові Українські Жінки</q></a>, нетворкинги от New Comunication и тд.</p>
-        <p class="main-paragraf">Продолжаю путешествовать, на моем счету уже 17 стран. Во Франции, Париж — я так же принимаю раз в месяц по 5 дней для того что бы продвигать холистический подход и в других странах!</p>
-        <p class="main-paragraf">Сегодня я специалист в области прикладной кинезиологии и эстетики тела человека, приглашаю в свой центр всех тех, кто желает улучшить своё здоровье, тело, душу и изменить свою жизнь!</p>
       </div>
-    </div>
 
-    <h1 class="main-header1"># КОНТАКТЫ</h1>
-    <div class="background-container">
-      <div class="contacts">
-
-        <h3 class="main-header3">Локация приема и проведения занятий йогои</h3>
-        <div id="map" style="height:400px"></div>
-
-        <div class="services-grid">
-          <div class="main-grid-item-3">
-            <h3 class="main-header3">Ресурсы с самыми свежими новостями</h3>
-
-            <!-- appendix link -->
-            <!-- <a href="instagram://user?username=back_to_myself_studio" class="contacts-link"> -->
-            <!-- web link -->
-            <a href="https://www.instagram.com/back_to_myself_studio/" class="contacts-link">
-              <svg class="contacts-link__svg" version="1.1" height="50" width="50" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
-                <linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="-46.0041" y1="634.1208" x2="-32.9334" y2="647.1917" gradientTransform="matrix(32 0 0 -32 1519 20757)">
-                  <stop  offset="0" style="stop-color:#FFC107"/>
-                  <stop  offset="0.507" style="stop-color:#F44336"/>
-                  <stop  offset="0.99" style="stop-color:#9C27B0"/>
-                </linearGradient>
-                <path style="fill:url(#SVGID_1_);" d="M352,0H160C71.648,0,0,71.648,0,160v192c0,88.352,71.648,160,160,160h192
-                c88.352,0,160-71.648,160-160V160C512,71.648,440.352,0,352,0z M464,352c0,61.76-50.24,112-112,112H160c-61.76,0-112-50.24-112-112
-                V160C48,98.24,98.24,48,160,48h192c61.76,0,112,50.24,112,112V352z"/>
-                <linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="-42.2971" y1="637.8279" x2="-36.6404" y2="643.4846" gradientTransform="matrix(32 0 0 -32 1519 20757)">
-                  <stop  offset="0" style="stop-color:#FFC107"/>
-                  <stop  offset="0.507" style="stop-color:#F44336"/>
-                  <stop  offset="0.99" style="stop-color:#9C27B0"/>
-                </linearGradient>
-                <path style="fill:url(#SVGID_2_);" d="M256,128c-70.688,0-128,57.312-128,128s57.312,128,128,128s128-57.312,128-128
-                S326.688,128,256,128z M256,336c-44.096,0-80-35.904-80-80c0-44.128,35.904-80,80-80s80,35.872,80,80
-                C336,300.096,300.096,336,256,336z"/>
-                <linearGradient id="SVGID_3_" gradientUnits="userSpaceOnUse" x1="-35.5456" y1="644.5793" x2="-34.7919" y2="645.3331" gradientTransform="matrix(32 0 0 -32 1519 20757)">
-                  <stop  offset="0" style="stop-color:#FFC107"/>
-                  <stop  offset="0.507" style="stop-color:#F44336"/>
-                  <stop  offset="0.99" style="stop-color:#9C27B0"/>
-                </linearGradient>
-                <circle style="fill:url(#SVGID_3_);" cx="393.6" cy="118.4" r="17.056"/>
+      <h1 class="main-header1"># КОНТАКТЫ</h1>
+      <div class="background-container">
+        <div class="contacts">
+          <h3 class="main-header3">Локация приема и проведения занятий йогои</h3>
+          <div id="map" style="height:400px"></div>
+          <div class="services-grid">
+            <div class="main-grid-item-3">
+              <h3 class="main-header3">Ресурсы с самыми свежими новостями</h3>
+              <!-- appendix link -->
+              <!-- <a target="_blank" class="contacts-link" href="instagram://user?username=back_to_myself_studio"> -->
+              <!-- web link -->
+              <a target="_blank" class="contacts-link" href="https://www.instagram.com/back_to_myself_studio/">
+                <svg class="contacts-link__svg" version="1.1" height="50" width="50" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                  viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                  <linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="-46.0041" y1="634.1208" x2="-32.9334" y2="647.1917" gradientTransform="matrix(32 0 0 -32 1519 20757)">
+                    <stop  offset="0" style="stop-color:#FFC107"/>
+                    <stop  offset="0.507" style="stop-color:#F44336"/>
+                    <stop  offset="0.99" style="stop-color:#9C27B0"/>
+                  </linearGradient>
+                  <path style="fill:url(#SVGID_1_);" d="M352,0H160C71.648,0,0,71.648,0,160v192c0,88.352,71.648,160,160,160h192
+                  c88.352,0,160-71.648,160-160V160C512,71.648,440.352,0,352,0z M464,352c0,61.76-50.24,112-112,112H160c-61.76,0-112-50.24-112-112
+                  V160C48,98.24,98.24,48,160,48h192c61.76,0,112,50.24,112,112V352z"/>
+                  <linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="-42.2971" y1="637.8279" x2="-36.6404" y2="643.4846" gradientTransform="matrix(32 0 0 -32 1519 20757)">
+                    <stop  offset="0" style="stop-color:#FFC107"/>
+                    <stop  offset="0.507" style="stop-color:#F44336"/>
+                    <stop  offset="0.99" style="stop-color:#9C27B0"/>
+                  </linearGradient>
+                  <path style="fill:url(#SVGID_2_);" d="M256,128c-70.688,0-128,57.312-128,128s57.312,128,128,128s128-57.312,128-128
+                  S326.688,128,256,128z M256,336c-44.096,0-80-35.904-80-80c0-44.128,35.904-80,80-80s80,35.872,80,80
+                  C336,300.096,300.096,336,256,336z"/>
+                  <linearGradient id="SVGID_3_" gradientUnits="userSpaceOnUse" x1="-35.5456" y1="644.5793" x2="-34.7919" y2="645.3331" gradientTransform="matrix(32 0 0 -32 1519 20757)">
+                    <stop  offset="0" style="stop-color:#FFC107"/>
+                    <stop  offset="0.507" style="stop-color:#F44336"/>
+                    <stop  offset="0.99" style="stop-color:#9C27B0"/>
+                  </linearGradient>
+                  <circle style="fill:url(#SVGID_3_);" cx="393.6" cy="118.4" r="17.056"/>
+                </svg>
+                <p class="contacts-link__text">INSTAGRAM</p>
+              </a>
+              <!--faceboock only web link -->
+              <a target="_blank" class="contacts-link" href="https://www.facebook.com/profile.php?id=100041129270478">
+                <svg class="contacts-link__svg" version="1.1" height="50" width="50" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                  viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                  <path style="fill:#1976D2;" d="M448,0H64C28.704,0,0,28.704,0,64v384c0,35.296,28.704,64,64,64h384c35.296,0,64-28.704,64-64V64
+                  C512,28.704,483.296,0,448,0z"/>
+                  <path style="fill:#FAFAFA;" d="M432,256h-80v-64c0-17.664,14.336-16,32-16h32V96h-64l0,0c-53.024,0-96,42.976-96,96v64h-64v80h64
+                  v176h96V336h48L432,256z"/>
               </svg>
-              <p class="contacts-link__text">INSTAGRAM</p>
-            </a>
-
-            <!--faceboock only web link -->
-            <a href="https://www.facebook.com/profile.php?id=100041129270478" class="contacts-link">
-              <svg class="contacts-link__svg" version="1.1" height="50" width="50" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
-                <path style="fill:#1976D2;" d="M448,0H64C28.704,0,0,28.704,0,64v384c0,35.296,28.704,64,64,64h384c35.296,0,64-28.704,64-64V64
-                C512,28.704,483.296,0,448,0z"/>
-                <path style="fill:#FAFAFA;" d="M432,256h-80v-64c0-17.664,14.336-16,32-16h32V96h-64l0,0c-53.024,0-96,42.976-96,96v64h-64v80h64
-                v176h96V336h48L432,256z"/>
-             </svg>
-             <p class="contacts-link__text">FACEBOOCK</p>
-            </a>
-          </div>
-
-          <div class="main-grid-item-3">
-            <h3 class="main-header3">Ресурсы для обратной связи</h3>
-
-            <!-- web link -->
-
-            <!-- appendix link for desktop-->
-            <!-- <a href="viber://chat?number=+380978980087" class="contacts-link"> -->
-            <!-- appendix link for mobile-->
-            <a href="viber://add?number=380978980087" class="contacts-link">
-              <svg class="contacts-link__svg" enable-background="new 0 0 24 24" height="50" viewBox="0 0 24 24" width="50" xmlns="http://www.w3.org/2000/svg"><g fill="#8e24aa">
-                <path d="m23.155 13.893c.716-6.027-.344-9.832-2.256-11.553l.001-.001c-3.086-2.939-13.508-3.374-17.2.132-1.658 1.715-2.242 4.232-2.306 7.348-.064 3.117-.14 8.956 5.301 10.54h.005l-.005 2.419s-.037.98.589 1.177c.716.232 1.04-.223 3.267-2.883 3.724.323 6.584-.417 6.909-.525.752-.252 5.007-.815 5.695-6.654zm-12.237 5.477s-2.357 2.939-3.09 3.702c-.24.248-.503.225-.499-.267 0-.323.018-4.016.018-4.016-4.613-1.322-4.341-6.294-4.291-8.895.05-2.602.526-4.733 1.93-6.168 3.239-3.037 12.376-2.358 14.704-.17 2.846 2.523 1.833 9.651 1.839 9.894-.585 4.874-4.033 5.183-4.667 5.394-.271.09-2.786.737-5.944.526z"/>
-                <path d="m12.222 4.297c-.385 0-.385.6 0 .605 2.987.023 5.447 2.105 5.474 5.924 0 .403.59.398.585-.005h-.001c-.032-4.115-2.718-6.501-6.058-6.524z"/>
-                <path d="m16.151 10.193c-.009.398.58.417.585.014.049-2.269-1.35-4.138-3.979-4.335-.385-.028-.425.577-.041.605 2.28.173 3.481 1.729 3.435 3.716z"/>
-                <path d="m15.521 12.774c-.494-.286-.997-.108-1.205.173l-.435.563c-.221.286-.634.248-.634.248-3.014-.797-3.82-3.951-3.82-3.951s-.037-.427.239-.656l.544-.45c.272-.216.444-.736.167-1.247-.74-1.337-1.237-1.798-1.49-2.152-.266-.333-.666-.408-1.082-.183h-.009c-.865.506-1.812 1.453-1.509 2.428.517 1.028 1.467 4.305 4.495 6.781 1.423 1.171 3.675 2.371 4.631 2.648l.009.014c.942.314 1.858-.67 2.347-1.561v-.007c.217-.431.145-.839-.172-1.106-.562-.548-1.41-1.153-2.076-1.542z"/>
-                <path d="m13.169 8.104c.961.056 1.427.558 1.477 1.589.018.403.603.375.585-.028-.064-1.346-.766-2.096-2.03-2.166-.385-.023-.421.582-.032.605z"/></g>
-              </svg>
-              <p class="contacts-link__text">VIBER</p>
-            </a>
-
-            <!-- web link -->
-            <!-- <a href="https://web.telegram.org/#/im?p=@BackToMyself_Studio" class="contacts-link"> -->
-            <!-- appendix link -->
-            <a href="tg://resolve?domain=BackToMyself_Studio" class="contacts-link">
-              <svg class="contacts-link__svg" enable-background="new 0 0 24 24" height="50" viewBox="0 0 24 24" width="50" xmlns="http://www.w3.org/2000/svg">
-                <path d="m9.417 15.181-.397 5.584c.568 0 .814-.244 1.109-.537l2.663-2.545 5.518 4.041c1.012.564 1.725.267 1.998-.931l3.622-16.972.001-.001c.321-1.496-.541-2.081-1.527-1.714l-21.29 8.151c-1.453.564-1.431 1.374-.247 1.741l5.443 1.693 12.643-7.911c.595-.394 1.136-.176.691.218z" fill="#039be5"/>
-              </svg>
-              <p class="contacts-link__text">TELEGRAMM</p>
-            </a>
-          </div>
-
-          <div class="main-grid-item-3">
-            <h3 class="main-header3">Также всегда можно связаться по телефону</h3>
-            <a href="tel:0978980087" class="contacts-link">
-              <svg class="contacts-link__svg" version="1.1" height="50" width="50" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve" fill="#563d7c">
-                <g>
-                  <path d="M256,32c123.5,0,224,100.5,224,224S379.5,480,256,480S32,379.5,32,256S132.5,32,256,32 M256,0C114.625,0,0,114.625,0,256
-                    s114.625,256,256,256s256-114.625,256-256S397.375,0,256,0L256,0z M398.719,341.594l-1.438-4.375
-                    c-3.375-10.062-14.5-20.562-24.75-23.375L334.688,303.5c-10.25-2.781-24.875,0.969-32.405,8.5l-13.688,13.688
-                    c-49.75-13.469-88.781-52.5-102.219-102.25l13.688-13.688c7.5-7.5,11.25-22.125,8.469-32.406L198.219,139.5
-                    c-2.781-10.25-13.344-21.375-23.406-24.75l-4.313-1.438c-10.094-3.375-24.5,0.031-32,7.563l-20.5,20.5
-                    c-3.656,3.625-6,14.031-6,14.063c-0.688,65.063,24.813,127.719,70.813,173.75c45.875,45.875,108.313,71.345,173.156,70.781
-                    c0.344,0,11.063-2.281,14.719-5.938l20.5-20.5C398.688,366.062,402.062,351.656,398.719,341.594z"/>
-                </g>
-              </svg>
-              <p class="contacts-link__text">0978980087</p>
-            </a>
+              <p class="contacts-link__text">FACEBOOCK</p>
+              </a>
+            </div>
+            <div class="main-grid-item-3">
+              <h3 class="main-header3">Ресурсы для обратной связи</h3>
+              <!-- appendix link for desktop-->
+              <!-- <a target="_blank" class="contacts-link" href="viber://chat?number=+380978980087"> -->
+              <!-- appendix link for mobile-->
+              <a target="_blank" class="contacts-link" href="viber://add?number=380978980087">
+                <svg class="contacts-link__svg" enable-background="new 0 0 24 24" height="50" viewBox="0 0 24 24" width="50" xmlns="http://www.w3.org/2000/svg"><g fill="#8e24aa">
+                  <path d="m23.155 13.893c.716-6.027-.344-9.832-2.256-11.553l.001-.001c-3.086-2.939-13.508-3.374-17.2.132-1.658 1.715-2.242 4.232-2.306 7.348-.064 3.117-.14 8.956 5.301 10.54h.005l-.005 2.419s-.037.98.589 1.177c.716.232 1.04-.223 3.267-2.883 3.724.323 6.584-.417 6.909-.525.752-.252 5.007-.815 5.695-6.654zm-12.237 5.477s-2.357 2.939-3.09 3.702c-.24.248-.503.225-.499-.267 0-.323.018-4.016.018-4.016-4.613-1.322-4.341-6.294-4.291-8.895.05-2.602.526-4.733 1.93-6.168 3.239-3.037 12.376-2.358 14.704-.17 2.846 2.523 1.833 9.651 1.839 9.894-.585 4.874-4.033 5.183-4.667 5.394-.271.09-2.786.737-5.944.526z"/>
+                  <path d="m12.222 4.297c-.385 0-.385.6 0 .605 2.987.023 5.447 2.105 5.474 5.924 0 .403.59.398.585-.005h-.001c-.032-4.115-2.718-6.501-6.058-6.524z"/>
+                  <path d="m16.151 10.193c-.009.398.58.417.585.014.049-2.269-1.35-4.138-3.979-4.335-.385-.028-.425.577-.041.605 2.28.173 3.481 1.729 3.435 3.716z"/>
+                  <path d="m15.521 12.774c-.494-.286-.997-.108-1.205.173l-.435.563c-.221.286-.634.248-.634.248-3.014-.797-3.82-3.951-3.82-3.951s-.037-.427.239-.656l.544-.45c.272-.216.444-.736.167-1.247-.74-1.337-1.237-1.798-1.49-2.152-.266-.333-.666-.408-1.082-.183h-.009c-.865.506-1.812 1.453-1.509 2.428.517 1.028 1.467 4.305 4.495 6.781 1.423 1.171 3.675 2.371 4.631 2.648l.009.014c.942.314 1.858-.67 2.347-1.561v-.007c.217-.431.145-.839-.172-1.106-.562-.548-1.41-1.153-2.076-1.542z"/>
+                  <path d="m13.169 8.104c.961.056 1.427.558 1.477 1.589.018.403.603.375.585-.028-.064-1.346-.766-2.096-2.03-2.166-.385-.023-.421.582-.032.605z"/></g>
+                </svg>
+                <p class="contacts-link__text">VIBER</p>
+              </a>
+              <!-- web link -->
+              <!-- <a target="_blank" class="contacts-link" href="https://web.telegram.org/#/im?p=@BackToMyself_Studio"> -->
+              <!-- appendix link -->
+              <a target="_blank" class="contacts-link" href="tg://resolve?domain=BackToMyself_Studio">
+                <svg class="contacts-link__svg" enable-background="new 0 0 24 24" height="50" viewBox="0 0 24 24" width="50" xmlns="http://www.w3.org/2000/svg">
+                  <path d="m9.417 15.181-.397 5.584c.568 0 .814-.244 1.109-.537l2.663-2.545 5.518 4.041c1.012.564 1.725.267 1.998-.931l3.622-16.972.001-.001c.321-1.496-.541-2.081-1.527-1.714l-21.29 8.151c-1.453.564-1.431 1.374-.247 1.741l5.443 1.693 12.643-7.911c.595-.394 1.136-.176.691.218z" fill="#039be5"/>
+                </svg>
+                <p class="contacts-link__text">TELEGRAMM</p>
+              </a>
+            </div>
+            <div class="main-grid-item-3">
+              <h3 class="main-header3">Также всегда можно связаться по телефону</h3>
+              <a target="_blank" class="contacts-link" href="tel:0978980087">
+                <svg class="contacts-link__svg" version="1.1" height="50" width="50" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve" fill="#563d7c">
+                  <g>
+                    <path d="M256,32c123.5,0,224,100.5,224,224S379.5,480,256,480S32,379.5,32,256S132.5,32,256,32 M256,0C114.625,0,0,114.625,0,256
+                      s114.625,256,256,256s256-114.625,256-256S397.375,0,256,0L256,0z M398.719,341.594l-1.438-4.375
+                      c-3.375-10.062-14.5-20.562-24.75-23.375L334.688,303.5c-10.25-2.781-24.875,0.969-32.405,8.5l-13.688,13.688
+                      c-49.75-13.469-88.781-52.5-102.219-102.25l13.688-13.688c7.5-7.5,11.25-22.125,8.469-32.406L198.219,139.5
+                      c-2.781-10.25-13.344-21.375-23.406-24.75l-4.313-1.438c-10.094-3.375-24.5,0.031-32,7.563l-20.5,20.5
+                      c-3.656,3.625-6,14.031-6,14.063c-0.688,65.063,24.813,127.719,70.813,173.75c45.875,45.875,108.313,71.345,173.156,70.781
+                      c0.344,0,11.063-2.281,14.719-5.938l20.5-20.5C398.688,366.062,402.062,351.656,398.719,341.594z"/>
+                  </g>
+                </svg>
+                <p class="contacts-link__text">0978980087</p>
+              </a>
+            </div>
           </div>
         </div>
+      </div>
+      
+      <h1 class="main-header1"># МЕРОПРИЯТИЯ</h1>
+      <div class="background-container">
 
       </div>
-    </div>
+    </main>
 
-    <h1 class="main-header1"># МЕРОПРИЯТИЯ</h1>
-    
-  </main>
+    <footer class="footer">
+      <p class="footer-copiright">&#169; 2019 / Designed by <a target="_blank" class="footer-copiright__link" href="https://github.com/EdGunUk">EdGunUk</a></p>
+    </footer>
 
-  <script defer src="js/header.js" type="text/javascript"></script>
-  <script defer src="js/carusel.js" type="text/javascript"></script>
-  <script defer src="js/services.js" type="text/javascript"></script>
-  <script defer src="js/about-me.js" type="text/javascript"></script>
-
-  <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
-
-</body>
+    <script defer src="js/header.js" type="text/javascript"></script>
+    <script defer src="js/carusel.js" type="text/javascript"></script>
+    <script defer src="js/services.js" type="text/javascript"></script>
+    <script defer src="js/about-me.js" type="text/javascript"></script>
+  </body>
 </html>
