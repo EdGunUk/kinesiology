@@ -42,6 +42,7 @@
   font-size: 18px;
   font-style: normal;
   font-weight: 200;
+  white-space: nowrap;
   width: 0;
 }
 
@@ -51,18 +52,20 @@
 }
 
 @media (min-width: 768px) {
+  .contacts-link__text {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 992px) {
   .main-grid-item-3 {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 33.333333%;
             flex: 0 0 33.333333%;
     max-width: 33.333333%;
   }
-  
-  .main-grid-item-3 .main-header3 {
-    min-height: 55px;
-  }
 
-  .contacts-link__text {
-    font-size: 20px;
+  .main-grid-item-3 .main-header3 {
+    min-height: 50px;
   }
 }
