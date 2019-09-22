@@ -1,5 +1,5 @@
 "use strict";
-let servicesContent = [].slice.call(document.body.querySelectorAll(".services-content"));
+let servicesContent = [].slice.call(document.body.querySelectorAll(".services-item"));
 
 function rotateImg(event) {
   let coords = this.getBoundingClientRect();
@@ -12,7 +12,7 @@ function rotateImg(event) {
 
   const coeficientDecrease = 20;
 
-  let servicesContentImg = this.querySelector(".services-content__img");
+  let servicesContentImg = this.querySelector(".services-item__img");
   
   servicesContentImg.style.WebkitTransform = 
   "rotateX(" + (coords.halfHeight - coords.mousseY) / coeficientDecrease + "deg)" + 
@@ -24,7 +24,7 @@ function rotateImg(event) {
 }
 
 function cancelRotateImg() {
-  let servicesContentImg = this.querySelector(".services-content__img");
+  let servicesContentImg = this.querySelector(".services-item__img");
 
   servicesContentImg.style.WebkitTransform = "rotateX(0deg)";
   servicesContentImg.style.transform = "rotateX(0deg)";
