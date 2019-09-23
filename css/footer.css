@@ -1,9 +1,15 @@
 .footer {
-  height: 50px;
-  background-color: var(--main-color);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: var(--site-color);
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  height: 50px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .footer-copiright {
   color: rgb(190, 190, 190);
@@ -15,10 +21,8 @@
 
 .footer-copiright__link {
   color: rgb(190, 190, 190);
-  text-decoration: none;
 }
 
 .footer-copiright__link:hover {
   color: rgb(255, 255, 255);
-  /* text-decoration: underline; */
 }
