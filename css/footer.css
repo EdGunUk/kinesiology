@@ -12,7 +12,7 @@
           justify-content: center;
 }
 .footer-copiright {
-  color: rgb(190, 190, 190);
+  color: var(--header-footer-color-1);
   font-family: San-Francisco;
   font-size: 15px;
   font-style: normal;

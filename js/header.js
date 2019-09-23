@@ -8,3 +8,4 @@ function toggleClass() {
 }
 
 iconHamburger.addEventListener("click", toggleClass);
+menu.addEventListener("click", toggleClass);

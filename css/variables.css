@@ -1,15 +1,14 @@
 :root {
   --general-color: rgb(86, 61, 124);
   --general-transition-duration: .5s;
-  --main-transition-duration: .5s;
 
   --header-footer-color: rgb(255, 255, 255);
-
-  --main-text-color: rgb(0, 0, 0);
-  --main-link-color: rgb(0, 112, 201);
-
+  --header-footer-color-1: rgb(190, 190, 190);
 
   --carusel-navigation-color-444: rgb(68, 68, 68);
   --carusel-navigation-color-fff: rgb(250, 250, 250);
   --carusel-transition-duration: 2s;
+
+  --main-text-color: rgb(0, 0, 0);
+  --main-link-color: rgb(0, 112, 201);
 }

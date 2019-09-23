@@ -7,9 +7,6 @@
   margin: 0;
   max-width: 1140px;
   padding: 0;
-  -webkit-transition-duration: 2s;
-       -o-transition-duration: 2s;
-          transition-duration: 2s;
   -webkit-transition-duration: var(--carusel-transition-duration);
        -o-transition-duration: var(--carusel-transition-duration);
           transition-duration: var(--carusel-transition-duration);
@@ -21,7 +18,6 @@
 }
 
 .carusel-item {
-  list-style-type: none;
   position: relative;
 }
 
@@ -37,9 +33,6 @@
   padding: 10px 0 ;
   position: absolute;
   text-align: center;
-  -webkit-transition-duration: 2s;
-       -o-transition-duration: 2s;
-          transition-duration: 2s;
   -webkit-transition-duration: var(--carusel-transition-duration);
        -o-transition-duration: var(--carusel-transition-duration);
           transition-duration: var(--carusel-transition-duration);
@@ -78,12 +71,6 @@
   color: #444;
 }
 
-.carusel-img {
-  display: block;
-  height: auto;
-  width: 100%;
-}
-
 .carusel-navigation {
   display: none;
 }
@@ -110,12 +97,9 @@
 .carusel-arrow-item, .carusel-arrow-item {
   display: block;
   height: 1px;
-  -webkit-transition-duration: .5s;
-       -o-transition-duration: .5s;
-          transition-duration: .5s;
-  -webkit-transition-duration: var(--main-transition-duration);
-       -o-transition-duration: var(--main-transition-duration);
-          transition-duration: var(--main-transition-duration);
+  -webkit-transition-duration: var(--general-transition-duration);
+       -o-transition-duration: var(--general-transition-duration);
+          transition-duration: var(--general-transition-duration);
   -webkit-transition-property: background-color;
   -o-transition-property: background-color;
   transition-property: background-color;
@@ -149,12 +133,9 @@
   display: block;
   height: 9px;
   margin: 5px;
-  -webkit-transition-duration: .5s;
-       -o-transition-duration: .5s;
-          transition-duration: .5s;
-  -webkit-transition-duration: var(--main-transition-duration);
-       -o-transition-duration: var(--main-transition-duration);
-          transition-duration: var(--main-transition-duration);
+  -webkit-transition-duration: var(--general-transition-duration);
+       -o-transition-duration: var(--general-transition-duration);
+          transition-duration: var(--general-transition-duration);
   -webkit-transition-property: background-color, border-color;
   -o-transition-property: background-color, border-color;
   transition-property: background-color, border-color;
