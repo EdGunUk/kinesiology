@@ -2,7 +2,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: var(--site-color);
+  background-color: var(--general-color);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -24,5 +24,5 @@
 }
 
 .footer-copiright__link:hover {
-  color: rgb(255, 255, 255);
+  color: var(--header-footer-color);
 }

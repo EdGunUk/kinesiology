@@ -11,7 +11,7 @@
 
 .main-header-1 {
   font-size: 21px;
-  margin-left: 30px;
+  margin-left: 51px;
 }
 
 .main-header-2 {
@@ -135,9 +135,9 @@
 }
 
 .services-item__img {
-  -webkit-transition-duration: var(--main-transition-duration);
-       -o-transition-duration: var(--main-transition-duration);
-          transition-duration: var(--main-transition-duration);
+  -webkit-transition-duration: var(--general-transition-duration);
+       -o-transition-duration: var(--general-transition-duration);
+          transition-duration: var(--general-transition-duration);
   -webkit-transition-property: -webkit-transform;
   transition-property: -webkit-transform;
   -o-transition-property: transform;
@@ -226,10 +226,6 @@
 /* ==================================================================== */
 
 @media (min-width: 576px) {
-  .main-header-1 {
-    margin-left: 51px;
-  }
-
   .row-item-1-576-2 {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 50%;
