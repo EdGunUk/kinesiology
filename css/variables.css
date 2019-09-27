@@ -1,5 +1,6 @@
 :root {
   --general-color: rgb(86, 61, 124);
+  --general-background: rgb(250, 250, 250);
   --general-transition-duration: .5s;
 
   --header-footer-color: rgb(255, 255, 255);
